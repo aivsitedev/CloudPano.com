@@ -1,0 +1,64 @@
+/*
+*Amethyst : #9b59b6
+*/
+
+::selection{
+  background: #9b59b6;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #9b59b6;
+  color: #fff;
+}
+#preloader,
+.sticky-wrapper.is-sticky .navbar-custom,
+#subscribe,
+.contact-section .contact-info,
+.back-to-top:hover, .btn-custom,
+.scroll-indicator.go-top:before,
+.scroll-indicator:before, 
+.scroll-indicator:after, 
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover{
+    background-color:#9b59b6 !important;
+}
+
+.home-fullscreen::after{
+    background-color: rgba(155, 89, 182, 0.81);
+}
+.btn,.feature-img,
+.contact-section .contact-info,
+.inner-box.active{
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(155, 89, 182, 0.7);
+    -moz-box-shadow: 0px 0px 60px 0px rgba(155, 89, 182, 0.7);
+    box-shadow: 0px 0px 60px 0px rgba(155, 89, 182, 0.7);
+}
+.btn-custom{
+    border:2px solid #9b59b6 !important;
+}
+.btn-white-fill, .text-custom, 
+.btn-white-bordered:hover, 
+.btn-custom:hover, 
+.features-box i, .pricing-column .plan-title,
+.team-social ul li a,
+#contact .text-danger, .fa,
+ .appstore-btn,.appstore-btn i{
+    color: #9b59b6 !important ;
+}
+.team-member{
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(155, 89, 182, 0.4);
+    -moz-box-shadow: 0px 0px 60px 0px rgba(155, 89, 182, 0.4);
+    box-shadow: 0px 0px 60px 0px rgba(155, 89, 182, 0.4);   
+}
+.form-control:focus,
+.about-story-content h1 + hr{
+    border-color:#9b59b6 !important;
+}
+.alert-danger{
+    color: #ffffff;
+    background-color: #9b59b6;
+    /* border-color: #ebccd1; */
+    box-shadow: 0 0 60px 0 rgba(155, 89, 182, 0.4);
+
+}

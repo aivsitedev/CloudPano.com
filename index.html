@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fully responsive and mobile first app landing template">
+        <meta name="author" content="BigHero">
+        <title>Tour Rhino - Tour Creator Software</title>
+        <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Device Mockups -->
+        <link rel="stylesheet" type="text/css" href="js/device-mockups.min.css">
+        <!-- Font Icons CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <!-- Magnific-popup -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <!-- Aos Animation -->
+        <link rel="stylesheet" href="css/aos.css">
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/three.min.js"></script>
+        <script src="js/panolens.min.js"></script>
+        <!-- Color style -->
+        <link href="css/colors/dodger-blue.css" rel="stylesheet" id="color-opt">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <!-- Favicon  -->
+        <link rel="icon" href="img/favicon.ico">
+    </head>
+    <body data-spy="scroll" data-target="#navbar-menu" id="darya">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+        <!-- Navbar -->
+        <div class="navbar navbar-custom sticky" role="navigation" id="sticky-nav">
+            <div class="container">
+                <!-- Navbar-header -->
+                <div class="navbar-header">
+                    <!-- Responsive menu button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <!-- LOGO -->
+                    <a class="logo" href="index.html">
+                        <img src="img/logo.png" alt="logo" class="navbar-brand img-responsive">
+                    </a>
+                </div>
+                <!-- end navbar-header -->
+                <!-- menu -->
+                <div class="navbar-collapse collapse" id="navbar-menu">
+                    <!-- Navbar left -->
+                    <ul class="nav navbar-nav nav-custom-left">
+                        <li>
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#clients" class="nav-link">Customers</a>
+                        </li>
+                        <li>
+                            <a href="#feature1" class="nav-link">Features</a>
+                        </li>
+                        <li>
+                            <a href="#pricing" class="nav-link">Price</a>
+                        </li>
+                    </ul>
+                    <!-- Navbar right -->
+                    <div class="nav navbar-nav navbar-right hidden-sm">
+                        <a href="http://204.48.19.3:8080/tours/SkgQ2t73km/edit" class="btn btn-white-bordered"> Try it! </a>
+                    </div>
+                </div>
+                <!--/Menu -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- End navbar-custom -->
+        <!-- Home -->
+        <section class="bg-custom home-fullscreen home" id="home">
+            <div class="home-sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="home-wrapper home-wrapper-alt">
+                                <h1 class="h1 font-light text-white w-full">Lightweight and easy-to-use 360 gallery creation software.</h1>
+                                <!-- <p class="up-type-title">360 tour software <br />for <span class="animated-text"></span></p> -->
+                                <!-- <br> -->
+                                <div class="header-info">
+                                    <p>
+                                        Try it free. No credit card required. Instant set-up.
+                                    </p>
+                                    <a href="https://www.youtube.com/watch?v=6NC_ODHu5jg" class="video-btn btn popup-video">
+                                        <i class="fa fa-play"></i>Watch Video
+                                    </a>
+                                    <a href="http://204.48.19.3:8080/tours/SkgQ2t73km/edit" class="btn btn-white-bordered"> Build your tour </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-md-5 col-md-offset-1 text-center">
+                            <!-- <img src="img/header-mobile.png" alt="header mobile" data-aos="zoom-out" class="img-responsive header-mobile"> -->
+                            <div class="device-wrapper" style="width:1000px; margin-left:-150px;">
+                                <div class="device" data-device="iPhone7" data-orientation="landscape" data-color="white">
+                                    <div id="headerScreen" class="screen">
+                                        <!-- <iframe name="iframe-example" height="100%" width="100%" src="http://view.tourrhino.com/airbnb/index.html"></iframe> -->
+                                        <!-- PUT CONTENTS HERE -->
+                                                                        <script>var panorama, viewer;
+                panorama = new PANOLENS.ImagePanorama( 'img/1.jpg' );
+                viewer = new PANOLENS.Viewer({container: document.querySelector('#headerScreen'), controlBar:false});
+                viewer.add( panorama );
+                viewer.getControl().autoRotateSpeed = .1;
+                viewer.getControl().autoRotate = true;
+                viewer.getControl().noZoom = true;</script>
+                                    </div>
+                                    <div class="button">
+                                        <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- End Home -->
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-center" style="margin:auto; width:800px;">
+                            <div class="title-box-icon" data-aos="fade-up">
+                                <h1>Five-minute setup. Mobile-ready.<br /> Analytics. Lead Capture.</h1>
+                                <p class="text-muted sub-title">We make it easy to create 360 tours and grow your business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-md-3 text-center" data-aos="flip-right">
+                        <div class="icon-box">
+                            <i class="far fa-smile-beam fa-3x" aria-hidden="true"></i>
+                            <h4 class="service-heading">Five-minute setup</h4>
+                            <p class="">Create a tour in under five minutes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center" data-aos="flip-right">
+                        <div class="icon-box">
+                            <i class="fas fa-mobile-alt fa-3x" aria-hidden="true"></i>
+                            <h4 class="service-heading">Mobile-Ready</h4>
+                            <p class="">Built in motion-sensing and VR features allow viewers to fully immerse themselves in your tour.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center" data-aos="flip-right">
+                        <div class="icon-box">
+                            <i class="fas fa-chart-line fa-3x" aria-hidden="true"></i>
+                            <h4 class="service-heading">Analytics</h4>
+                            <p class="">Built-in Google Analytics provide insights on your tours that can be shared with your clients.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center" data-aos="flip-right">
+                        <div class="icon-box">
+                            <i class="fas fa-file-invoice-dollar fa-3x" aria-hidden="true"></i>
+                            <h4 class="service-heading">Increase Leads</h4>
+                            <p class="">Capture customer information with built in lead-capture. Share your tour on social platforms or via text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- clients -->
+            <section id="clients" class="section">
+                <!-- CLIENTS HEADING -->
+                <div class="row" >
+                    <div class="col-sm-12 text-center">
+                        <h1>Aw, shucks. We're blushing.</h1>
+                        <p class="text-muted sub-title">We might be biased, but we think our software is pretty great. Our customers think so too.</p>
+                    </div>
+                </div>
+                <!-- end row -->
+                <!-- END CLIENTS HEADING -->
+                <!-- <div class="container">
+                    <div class="slider" data-aos="zoom-out">
+                        <div class="clients-content">
+                            <a href="#"><img src="img/support/logo1.png" alt=""></a>
+                        </div>
+                        <div class="clients-content">
+                            <a href="#"> <img src="img/support/logo2.png" alt=""></a>
+                        </div>
+                        <div class="clients-content">
+                            <a href="#"> <img src="img/support/logo3.png" alt=""></a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- testimonials -->
+                <div id="testimonials">
+                    <div class="container" data-aos="zoom-in">
+                        <div class="row">
+                            <!-- testimonials image text -->
+                            <div class="tt-images">
+                                <div class="tt-image"><img width="80" height="80" src="img/testimonials/testimonial1.png" alt="team"></div>
+                                <div class="tt-image"><img width="80" height="80" src="img/testimonials/testimonial2.png" alt="team"></div>
+                                <div class="tt-image"><img width="80" height="80" src="img/testimonials/testimonial3.png" alt="team"></div>
+                            </div>
+                            <!-- end testimonials image text -->
+                            <div class="slider">
+                                <!-- testimonials 1 -->
+                                <div class="tt-content">
+                                    <h3>
+                                    The software is as full-featured as KR Pano but significantly easier to use. I dont have to worry about hosting - I just shoot, click, and share! The easist-to-use tour software I have found yet.
+                                    </h3>
+                                    <div class="tt-container">
+                                        <h4>Michelle Brooks</h4>
+                                        <span class="content">Digital Marketing Professional</span>
+                                    </div>
+                                </div>
+                                <!-- testimonials 2 -->
+                                <div class="tt-content">
+                                    <h3>
+                                    The technology is pretty amazing and the finished 3D tour is high definition. The tours played well on everything from a desktop to a cellphone. Highly recommended.
+                                    </h3>
+                                    <div class="tt-container">
+                                        <h4>Donald Pierce</h4>
+                                        <span class="content">Realtor</span>
+                                    </div>
+                                </div>
+                                <!-- testimonials 3 -->
+                                <div class="tt-content">
+                                    <h3>
+                                    I was very happy with the 3D Tour. I believe it will be very helpful now and in the future to ensure a quick sale on my listings.
+                                    </h3>
+                                    <div class="tt-container">
+                                        <h4>Carole Hoffpauir</h4>
+                                        <span class="content">Realtor</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="http://204.48.19.3:8080/tours/SkgQ2t73km/edit" class="btn-custom center-button"> Get started for free</a>
+            </section>
+            <!-- end clients -->
+            <!-- Begin Feature 1 -->
+            <section class="section feature" id="feature1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="feature-heading" data-aos="fade-up">
+                            <h4 class="color"> <i class="far fa-smile-beam fa-2x" aria-hidden="true"></i> Five-minute setup</h4></div>
+                            <h1 class="h1" data-aos="fade-up">Create your first tour in under five minutes.</h1>
+                            <p class="feature-text" data-aos="fade-up">
+                                Add as many features to your tour as you want, or keep it simple. Use linked hotspots to teleport between scenes. Add information bubbles to showcase your property's features.
+                            </p>
+                            <h4 class="ttu" data-aos="fade-in">Popular Features</h4>
+                            <ul class="features-list" data-aos="fade-in">
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Hotspots</li>
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Infospots</li>
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Set initial view</li>
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Re-order scenes</li>
+                            </ul>
+
+                            <a href="http://204.48.19.3:8080/tours/SkgQ2t73km/edit" class="feature-go-link color"> Whip something up ></a>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-md-5 col-md-offset-1 text-center" data-aos="slide-left">
+                        <img class="feature-image" height="500px" src="img/feature1.png" /></div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Feature 1 -->
+            <!-- Begin Feature 2 -->
+            <section class="section feature" id="feature1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 text-center" data-aos="slide-right">
+                        <div class="device-wrapper" style="width:250px; margin-left:-40px; display:inline-block;">
+                                <div class="device" data-device="iPhone7" data-orientation="portrait" data-color="black">
+                                    <div id="screen1" class="screen">
+                                       
+                                        <!-- PUT CONTENTS HERE -->
+                                    </div>
+                                    <div class="button">
+                                        <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                    </div>
+                                </div>
+                            </div>
+
+                         <div class="device-wrapper" style="width:200px;margin-left:-80px; display:inline-block;">
+                                <div class="device" data-device="iPhone7" data-orientation="portrait" data-color="white">
+                                    <div id="screen2" class="screen">
+                                        <!-- PUT CONTENTS HERE -->
+                                    </div>
+                                    <div class="button">
+                                        <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                    </div>
+                                </div>
+                            </div>
+                              <script>
+                var panorama, viewer;
+                panorama = new PANOLENS.ImagePanorama( 'img/3.jpg' );
+                viewer = new PANOLENS.Viewer({container: document.querySelector('#screen1'), controlBar:false});
+                viewer.add( panorama );
+                viewer.getControl().autoRotateSpeed = .1;
+                viewer.getControl().autoRotate = true;
+                viewer.getControl().noZoom = true;
+
+                                var panorama2, viewer2;
+                panorama2 = new PANOLENS.ImagePanorama( 'img/6.jpg' );
+                viewer2 = new PANOLENS.Viewer({container: document.querySelector('#screen2'), controlBar:false});
+                viewer2.add( panorama2 );
+                viewer2.getControl().autoRotateSpeed = .3;
+                viewer2.getControl().autoRotate = true;
+                viewer2.getControl().noZoom = true;
+                </script>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-md-6">
+                            <div class="feature-heading">
+                            <h4 class="color" data-aos="fade-up"> <i class="fas fa-mobile-alt fa-2x" aria-hidden="true"></i> Mobile-ready Tours</h4></div>
+                            <h1 class="h1" data-aos="fade-up">Works with mobile devices out of the box - no software required</h1>
+                            <p class="feature-text" data-aos="fade-up">
+                                Give meaningful experiences to your viewers. Built-in motion sensing capabilities and VR-goggle modes work right in the browser. Reach your customer on any platform.
+                            </p>
+                            <h4 class="ttu" data-aos="fade-in">Popular Features</h4>
+                            <ul class="features-list" data-aos="fade-in">
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Android/iOS</li>
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Google Cardboard</li>
+                                <li class="feature-item"><i class="fas fa-check green"></i>  No software to download</li>
+                                <li class="feature-item"><i class="fas fa-check green"></i>  VR/Motion Navigation</li>
+                            </ul>
+                            <a href="http://204.48.19.3:8080/tours/SkgQ2t73km/edit" class="feature-go-link color"> Craft an experience ></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Feature 2 -->
+            <!-- Begin Feature 3 -->
+            <section class="section feature" id="feature1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="feature-heading" data-aos="fade-up">
+                            <h4 class="color"> <i class="fas fa-chart-line fa-2x" aria-hidden="true"></i> Analytics</h4></div>
+                            <h1 class="h1" data-aos="fade-up">Advanced Reporting comes standard</h1>
+                            <p class="feature-text" data-aos="fade-up">
+                                Find out what's working and what's not. Dig into your data to find opportunities to grow. Built-in google analytics allow you to target your customers most effectively.
+                            </p>
+                            <h4 class="ttu">Popular Features</h4>
+                            <ul class="features-list" data-aos="fade-in">
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Reports</li>
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Customer Trends</li>
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Bounce Rates</li>
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Return Viewers</li>
+                            </ul>
+                            <a href="http://204.48.19.3:8080/tours/SkgQ2t73km/edit" class="feature-go-link color"> Check your results ></a>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-md-5 col-md-offset-1 text-center" data-aos="slide-left">
+                        <img class="feature-image" height="500px" src="img/feature3.png" /></div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Feature 3 -->
+            <!-- Begin Feature 4 -->
+            <section class="section feature" id="feature1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 text-center" data-aos="slide-right">
+                        <img class="feature-image" height="450px"  src="img/feature4.png" style="margin-left:-500px" /></div>
+                        <!-- end col -->
+                        <div class="col-md-6">
+                            <div class="feature-heading">
+                                
+                            <h4 class="color" data-aos="fade-up"> <i class="fas fa-file-invoice-dollar fa-2x" aria-hidden="true"></i> Increase Leads</h4></div>
+                            <h1 class="h1" data-aos="fade-up">Capture customer information with built in lead-capture.</h1>
+                            <p class="feature-text" data-aos="fade-up">
+                                Offer discounts to viewers or give them an option to request more information. Capture leads and convert viewers to customers.
+                            </p>
+                            <h4 class="ttu" data-aos="fade-in">Popular Features</h4>
+                            <ul class="features-list" data-aos="fade-in">
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Lead capture</li>
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Discount</li>
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Customer List Generation</li>
+                                <li class="feature-item"><i class="fas fa-check green"></i>  Direct Marketing</li>
+                            </ul>
+                            <a href="http://204.48.19.3:8080/tours/SkgQ2t73km/edit" class="feature-go-link color"> Increase Sales > </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Feature 4 -->
+            <!-- pricing -->
+            <section id="pricing" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center">
+                                <div class="title-box-icon" data-aos="fade-up">
+                                    <i class="fa fa-cubes fa-4x"></i>
+                                    <h3 class="title">Choose your perfect plan</h3>
+                                    <p class="text-muted sub-title">Build a tour for a single property or run your 360 tour business on our platform.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <div class="row">
+                                <!--Pricing Column-->
+                                <article class="pricing-column col-lg-6 col-md-6" data-aos="flip-right">
+                                    <div class="inner-box">
+                                        <div class="plan-header text-center">
+                                            <h3 class="plan-title">Free</h3>
+                                            <h2 class="plan-price">$0</h2>
+                                            <div class="plan-duration">Yes, its free</div>
+                                        </div>
+                                        <ul class="plan-stats list-unstyled">
+                                            <li> <i class="fa fa-check-square-o"></i>360 experience</li>
+                                            <li> <i class="fa fa-check-square-o"></i>15 photo limit</li>
+                                            <li> <i class="fa fa-check-square-o"></i>Share your tour anywhere</li>
+                                            <li> <i class="fa fa-check-square-o"></i>Mobile/VR ready</li>
+                                            <li> <i class="fa fa-check-square-o"></i></li>
+                                        </ul>
+                                        <div class="text-center">
+                                            <a href="#" class="btn btn-sm btn-custom">Signup Now</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!--Pricing Column-->
+                                <article class="pricing-column col-lg-6 col-md-6" data-aos="zoom-out">
+                                    <div class="inner-box active">
+                                        <div class="plan-header text-center">
+                                            <h3 class="plan-title">Premium</h3>
+                                            <h2 class="plan-price">$8</h2>
+                                            <div class="plan-duration">Per Tour</div>
+                                        </div>
+                                        <ul class="plan-stats list-unstyled">
+                                            <li> <i class="fa fa-check-square-o"></i>Unlimited photos</li>
+                                            <li> <i class="fa fa-check-square-o"></i>Share your tour anywhere</li>
+                                            <li> <i class="fa fa-check-square-o"></i>Mobile/VR ready</li>
+                                            <li> <i class="fa fa-check-square-o"></i><b>Hotspot/scene linking</b></li>
+                                            <li> <i class="fa fa-check-square-o"></i><b>Basic Branding</b></li> 
+
+                                        </ul>
+                                        <div class="text-center">
+                                            <a href="#" class="btn btn-sm btn-custom">Signup Now</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!--Pricing Column-->
+                                <!-- <article class="pricing-column col-lg-4 col-md-4" data-aos="flip-right">
+                                    <div class="inner-box">
+                                        <div class="plan-header text-center">
+                                            <h3 class="plan-title">Professional</h3>
+                                            <h2 class="plan-price">$89</h2>
+                                            <div class="plan-duration">Per Month</div>
+                                        </div>
+                                        <ul class="plan-stats list-unstyled">
+                                            <li> <i class="fa fa-check-square-o"></i><b>Unlimited</b> 360 experiences</li>
+                                            <li> <i class="fa fa-check-square-o"></i><b>Unlimited</b> photos</li>
+                                            <li> <i class="fa fa-check-square-o"></i><b>White-labeling</b></li> 
+                                            <li> <i class="fa fa-check-square-o"></i><b>Use your own URL</b></li> 
+                                            <li> <i class="fa fa-check-square-o"></i><b>Lead capture</b></li> 
+                                        </ul>
+                                        <div class="text-center">
+                                            <a href="#" class="btn btn-sm btn-custom">Signup Now</a>
+                                        </div>
+                                    </div>
+                                </article> -->
+                            </div>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- End Pricing -->
+            <!-- / Contact section -->
+            <section class="section contact-section" id="contact">
+                <div class="container contact-info" data-aos="zoom-out">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>See it for yourself</h2>
+                            <p class="title-sub">Try it free. No credit card required. Instant set-up.</p>
+                        </div>
+                    </div>
+                    <div id="subscribe" class="row">
+                        <div class="col-md-12">
+                            <form class="subscribe-form">
+                                <input type="email" placeholder="Email Address" />
+                                <button class="btn btn-white-bordered" type="submit">Try it free</button>
+                                <div id="subscribe-success"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="particles-js"></div>
+            </section>
+            <!-- / container -->
+    <!-- FOOTER -->
+    <footer class="section footer">
+        <div class="container" data-aos="fade-up-down">
+            <!-- Navbar -->
+            <div class="navbar navbar-custom" role="navigation">
+                <!-- Navbar-header -->
+                <div class="navbar-header">
+                    <!-- LOGO -->
+                    <a class="logo" href="index.html">
+                        <img src="img/logo.png" alt="logo" class="navbar-brand img-responsive">
+                    </a>
+                </div>
+                <!-- end navbar-header -->
+                <!-- menu -->
+                <div class="navbar" id="footer-menu">
+                    <!-- Navbar left -->
+                    <ul class="nav navbar-nav nav-custom-left">
+                        <li>
+                            <a href="#" class="nav-link">About us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#clients" class="nav-link">Terms</a>
+                        </li>
+                    </ul>
+                    <!-- Navbar right -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#facebook"> <i class="fab fa-facebook"> </i> </a>
+                        </li>
+                        <li>
+                            <a href="#twitter"> <i class="fab fa-twitter"> </i> </a>
+                        </li>
+                        <li>
+                            <a href="#instagram"> <i class="fab fa-instagram"> </i> </a>
+                        </li>
+                        <li>
+                            <a href="#linkedin"> <i class="fab fa-linkedin"> </i> </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/Menu -->
+            </div>
+            <!-- End navbar-custom -->
+            <div class="lower-footer">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="footer-alt text-left">
+                            <p class="text-muted m-b-0">Tour Rhino, All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- END FOOTER -->
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Jquery easing -->
+    <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+    <!--sticky header-->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <!-- OWL Carousel -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!--Magnific popup-->
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <!-- contact form -->
+    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <!-- Particles js -->
+    <script type="text/javascript" src="js/particles.js"></script>
+    <!-- Typedjs -->
+    <script type="text/javascript" src="js/typed.min.js"></script>
+    <!-- Aos Animation -->
+    <script type="text/javascript" src="js/aos.js"></script>
+    <!--common script for all pages-->
+    <script src="js/custom.js"></script>
+</body>
+</html>
