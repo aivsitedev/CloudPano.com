@@ -106,7 +106,7 @@
 						<!-- end col -->
 						<div class="col-md-5 col-md-offset-1 text-center">
 							<!-- <img src="img/header-mobile.png" alt="header mobile" data-aos="zoom-out" class="img-responsive header-mobile"> -->
-							<div class="device-wrapper" style="width:1000px; margin-left:-150px;">
+							<div id="featureDevice" class="device-wrapper">
 								<div class="device" data-device="iPhone7" data-orientation="landscape" data-color="white">
 									<div id="headerScreen" class="screen">
 										<!-- <iframe name="iframe-example" height="100%" width="100%" src="http://view.tourrhino.com/airbnb/index.html"></iframe> -->
@@ -117,7 +117,10 @@
 										viewer.add( panorama );
 										viewer.getControl().autoRotateSpeed = .1;
 										viewer.getControl().autoRotate = true;
-										viewer.getControl().noZoom = true;</script>
+										viewer.getControl().noZoom = true;
+									var width = document.getElementById("headerScreen").offsetWidth;
+								var height = document.getElementById("headerScreen").offsetHeight;
+							  viewer.onWindowResize( width, height );</script>
 									</div>
 									<div class="button">
 										<!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -136,7 +139,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<div class="text-center" style="margin:auto; width:800px;">
+						<div class="text-center" style="margin:auto;">
 							<div class="title-box-icon" data-aos="fade-up">
 								<h1>Five-minute setup. Mobile-ready.<br /> Analytics. Lead Capture.</h1>
 								<p class="text-muted sub-title">We make it easy to create 360 tours and grow your business.</p>
@@ -271,17 +274,17 @@
 						</div>
 						<!-- end col -->
 						<div class="col-md-5 col-md-offset-1 text-center" data-aos="slide-left">
-						<img class="feature-image" height="500px" src="img/feature1.png" /></div>
+						<img class="feature-image" src="img/feature1.png" /></div>
 					</div>
 				</div>
 			</section>
 			<!-- End Feature 1 -->
 			<!-- Begin Feature 2 -->
-			<section class="section feature" id="feature1">
+			<section class="section feature" id="feature2">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-5 col-md-offset-1 text-center" data-aos="slide-right">
-							<div class="device-wrapper" style="width:250px; margin-left:-40px; display:inline-block;">
+							<div id="phoneFeature2" class="device-wrapper" style="width:250px; display:inline-block;">
 								<div class="device" data-device="iPhone7" data-orientation="portrait" data-color="black">
 									<div id="screen1" class="screen">
 										
@@ -341,7 +344,7 @@
 			</section>
 			<!-- End Feature 2 -->
 			<!-- Begin Feature 3 -->
-			<section class="section feature" id="feature1">
+			<section class="section feature" id="feature3">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
@@ -362,17 +365,17 @@
 						</div>
 						<!-- end col -->
 						<div class="col-md-5 col-md-offset-1 text-center" data-aos="slide-left">
-						<img class="feature-image" height="500px" src="img/feature3.png" /></div>
+						<img class="feature-image" src="img/feature3.png" /></div>
 					</div>
 				</div>
 			</section>
 			<!-- End Feature 3 -->
 			<!-- Begin Feature 4 -->
-			<section class="section feature" id="feature1">
+			<section class="section feature" id="feature4">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-5 col-md-offset-1 text-center" data-aos="slide-right">
-						<img class="feature-image" height="450px"  src="img/feature4.png" style="margin-left:-500px" /></div>
+						<img class="feature-image" src="img/feature4.png" /></div>
 						<!-- end col -->
 						<div class="col-md-6">
 							<div class="feature-heading">
@@ -535,7 +538,7 @@
 								</li>
 							</ul>
 							<!-- Navbar right -->
-							<ul class="nav navbar-nav navbar-right">
+							<ul class="nav navbar-nav social-nav navbar-right">
 								<li>
 									<a href="#facebook"> <i class="fab fa-facebook"> </i> </a>
 								</li>

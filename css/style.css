@@ -1890,4 +1890,56 @@ Table of contents
 
 .feature-image {
     box-shadow: 0px 0px 14px #000;
+    height:500px;
+}
+
+#feature4 .feature-image{
+     margin-left:-500px
+}
+
+#featureDevice {
+     width: 1000px; 
+     margin-left:-150px;
+}
+
+#phoneFeature2 {
+     margin-left:-40px;
+}
+
+ @media (max-width: 767px) {
+#featureDevice {
+     width: unset;
+     margin:unset;
+}
+.feature-image {
+     height:unset;
+     margin-left: unset;
+     margin-right:unset;
+     width:100%;
+}
+.feature-go-link{
+     padding-bottom: 30px;
+    text-align: center;
+    display: block;
+}
+#phoneFeature2 {
+     margin-left:unset;
+}
+ul.nav-custom-left, .nav.hidden-sm{
+     text-align: center;
+}
+
+html,body {
+     max-width: 100%;
+    overflow-x: hidden;
+}
+}
+
+.social-nav > li{
+     float: left;
+     display: inline-table;
+}
+
+#footer-menu{
+     text-align: center;
 }
