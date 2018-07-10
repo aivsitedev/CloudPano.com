@@ -1933,6 +1933,9 @@ html,body {
      max-width: 100%;
     overflow-x: hidden;
 }
+.home-wrapper {
+     padding:unset;
+}
 }
 
 .social-nav > li{
