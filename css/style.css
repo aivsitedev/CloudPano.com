@@ -63,10 +63,6 @@ Table of contents
      outline: none !important;
  }
  
- a:focus,
- a:hover {
-     color: #9158d9;
- }
  /*======= 2.General ======== */
  
  .section {
@@ -2014,3 +2010,31 @@ html,body {
      }
      }
 
+.featureButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 230px;
+    height: 38px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 19px;
+    background-color: #e9ecff;
+    color: #2062ef;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.featureButton:hover {
+    background-color: #4891EF;
+    color: #fff !important;
+    transition: .5s all;
+
+}
