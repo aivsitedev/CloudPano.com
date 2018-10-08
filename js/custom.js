@@ -53,7 +53,7 @@ jQuery(document).ready(function($) {
         navigation: true,
         pagination: false,
         autoPlay: 5000, //Set AutoPlay to 3 seconds 
-        items: 5,
+        items: 3,
         loop: true,
     });
 
