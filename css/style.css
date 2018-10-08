@@ -939,7 +939,6 @@ Table of contents
  }
  
  .about-story {
-     margin-top: 50px;
      padding: 30px 0px;
  }
  
@@ -1998,7 +1997,9 @@ html,body {
 .featureVideoOffset {
     margin-left: -100px;
 }
-
+.previewMajor {
+    max-width: 140%;
+}
  @media (max-width: 992px) {
      .noMobile {
           display:none !important;
@@ -2019,6 +2020,9 @@ html,body {
          margin-left:18%;
          margin-bottom:15px;
      }
+     .previewMajor {
+        max-width: 100%;
+    }
      }
 
 .featureButton {
@@ -2054,3 +2058,11 @@ html,body {
     margin-top: -30px;
     text-align: center;
 }
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -120px;
+    visibility: hidden;
+}
+
