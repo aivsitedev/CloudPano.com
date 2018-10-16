@@ -22,8 +22,6 @@
 	<link rel="stylesheet" href="css/aos.css">
 	<!-- Custom styles for this template -->
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/three.min.js"></script>
-	<script src="js/panolens.min.js"></script>
 	<!-- Color style -->
 	<link href="css/colors/dodger-blue.css" rel="stylesheet" id="color-opt">
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -279,7 +277,7 @@
 							viewer.getControl().autoRotate = true;
 							viewer.getControl().noZoom = true;
 							var panorama2, viewer2;
-							panorama2 = new PANOLENS.ImagePanorama('img/6.jpg');
+							panorama2 = new PANOLENS.ImagePanorama('img/1.jpg');
 							viewer2 = new PANOLENS.Viewer({ container: document.querySelector('#screen2'), controlBar: false });
 							viewer2.add(panorama2);
 							viewer2.getControl().autoRotateSpeed = .3;
@@ -705,8 +703,8 @@
 		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 		<!-- contact form -->
 		<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-		<!-- Particles js -->
-		<script type="text/javascript" src="js/particles.js"></script>
+			<script src="js/three.min.js"></script>
+	<script src="js/panolens.min.js"></script>
 		<!-- Typedjs -->
 		<script type="text/javascript" src="js/typed.min.js"></script>
 		<!-- Aos Animation -->
