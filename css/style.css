@@ -33,6 +33,7 @@ Table of contents
 10. Footer
 11. Responsive
 12. Default Color Skin
+13. Test CSS
 
 -------------------------------------------------------------------*/
  /*======= 1.Reset ======== */
@@ -864,15 +865,22 @@ Table of contents
  
  .header-info {
      margin-top: 30px;
-     margin-bottom: 30px;
+     margin-bottom: 5px;
  }
  
  .header-info p {
-     color: rgba(255, 255, 255, 0.7);
-     font-size: 1.8rem;
-     padding-bottom: 20px;
+     color: white;
+     font-size: 1.7rem;
+     padding-bottom: 1px;
      font-weight: 700;
  }
+
+ .header-info li{
+    color: white;
+    font-size: 1.6rem;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
  
  .up-type-title .animated-text {
      border-bottom: 2px solid;
@@ -1907,6 +1915,13 @@ Table of contents
 }
 
  @media (max-width: 767px) {
+
+#test2 { 
+    display: flex;         
+    background: linear-gradient(90deg, #4891ef 20px, transparent 1%) center, linear-gradient(#4891ef 20px, transparent 1%) center, #69a2f3;
+    background-size: 22px 22px;
+}
+
 #featureDevice {
      width: unset;
      margin:unset;
@@ -1951,20 +1966,43 @@ html,body {
      padding-bottom:50px;
 }
 
+#font p{
+    font-size: 10px;
+    font-weight: normal;
+}
+
+p.small {
+    text-align: center;
+    color: #77ba4a;
+    font-size: 15px;
+    font-weight: normal;
+}
+
 .callToActionBtn {
-     background-color: #2B40FF !important;
-         padding: 8px 24px !important;
-    color: #ffffff;
-    border-radius: 50px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    transition: 0.5s all;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;    
+    box-shadow: 0 9px #999; 
 }
 
 .callToActionBtn:hover {
-     background-color: #ffffff !important;
-     color: #2B40FF !important;
- }
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.callToActionBtn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 
  h1.h1.feature {
      font-weight: 700;
@@ -2065,4 +2103,289 @@ a.anchor {
     top: -120px;
     visibility: hidden;
 }
+
+/*======= 13. Test CSS =======*/
+
+
+#test2 {       
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, #4891ef 20px, transparent 1%) center, linear-gradient(#4891ef 20px, transparent 1%) center, #69a2f3;
+	background-size: 22px 22px;
+}
+
+
+#test4 img {
+    margin-right: 10px;
+    margin-top: 25px !important;    
+    border-radius: 50%;   
+}
+
+#test5 h3 {
+    color: rgb(218, 223, 248);
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#test5 h4 {
+    color: rgb(252, 252, 252);
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#test6 img {
+    margin-bottom: 40px; 
+}
+
+#alone {
+    margin-left: 50px;    
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#try {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+span.btn-sub-text {
+    color: white;     
+}
+
+.buttons {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #72c059;
+    border: none; 
+    box-shadow: 0 9px #59a63f; 
+    transform: translateY(1px);   
+    border-radius: 3px;    
+  }
+  
+  .buttons:hover {
+    background-color: #72c059;
+    box-shadow: 0 6px #59a63f;
+    transform: translateY(4px);
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .buttons:active {
+    background-color: #72c059;
+    box-shadow: 0 1px #59a63f;
+    transform: translateY(8px);
+  }
+
+  #footer1 {
+    margin-bottom: 30px;
+  }
+
+  #footer1 ul {
+    position: relative;
+    font-style: inherit;
+    list-style: none;  
+    margin: 10px;  
+    line-height: 1.5;
+  }
+
+  #footer1 li a {    
+    font-style: inherit;
+    list-style: none;  
+    font-weight: 500;     
+    font-size: 21px;     
+    color: whitesmoke !important;    
+  }
+
+  #footer2 ul {
+    position: relative;
+    font-style: inherit;
+    list-style: none;  
+    margin: 10px;   
+  }
+
+  #footer2 li a {    
+    font-style: inherit;
+    list-style: none;  
+    font-weight: 500;     
+    font-size: 15px;     
+    color: whitesmoke !important;    
+  }
+
+  
+
+
+  z {
+    /*   positioning */
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            left: 0;
+      
+    /*   gradient   */
+            background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.03) 1%, rgba(255,255,255,0.6) 30%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.85) 70%, rgba(255,255,255,0.85) 71%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(1%,rgba(255,255,255,0.03)), color-stop(30%,rgba(255,255,255,0.85)), color-stop(50%,rgba(255,255,255,0.85)), color-stop(70%,rgba(255,255,255,0.85)), color-stop(71%,rgba(255,255,255,0.85)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* IE10+ */
+            background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+        
+    /*  forming the shine element
+        play around with the width, skew and gradient to get different effects
+      */
+            width: 15%;
+            height: 100%;
+         transform: skew(-10deg,0deg);
+            -webkit-transform: skew(-10deg,0deg);
+         -moz-transform: skew(-10deg,0deg);
+         -ms-transform: skew(-10deg,0deg);
+         -o-transform: skew(-10deg,0deg);
+      
+    /*  animating it  */
+         animation: move 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            -webkit-animation: move 2s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-delay: 1s;
+            -moz-transform: skew(-10deg,0deg);
+            -moz-animation: move 2s;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-delay: 1s;
+            -ms-transform: skew(-10deg,0deg);
+            -ms-animation: move 2s;
+            -ms-animation-iteration-count: infinite;
+            -ms-animation-delay: 1s;
+            -o-transform: skew(-10deg,0deg);
+            -o-animation: move 2s;
+            -o-animation-iteration-count: infinite;
+            -o-animation-delay: 1s;
+        }
+    
+    /*  */
+    @keyframes move {
+        0%  { left: 0; opacity: 0; }
+        5% {opacity: 0.0}
+        48% {opacity: 0.2}
+        80% {opacity: 0.0}
+        100% { left: 82%}
+    }
+    
+    @-webkit-keyframes move {
+        0%  { left: 0; opacity: 0; }
+        5% {opacity: 0.0}
+        48% {opacity: 0.2}
+        80% {opacity: 0.0}
+        100% { left: 82%}
+    }
+    
+    @-moz-keyframes move {
+        0%  { left: 0; opacity: 0; }
+        5% {opacity: 0.0}
+        48% {opacity: 0.2}
+        80% {opacity: 0.0}
+        100% { left: 88%}
+    }
+    
+    @-ms-keyframes move {
+        0%  { left: 0; opacity: 0; }
+        5% {opacity: 0.0}
+        48% {opacity: 0.2}
+        80% {opacity: 0.0}
+        100% { left: 82%}
+    }
+    
+    @-o-keyframes move {
+        0%  { left: 0; opacity: 0; }
+        5% {opacity: 0.0}
+        48% {opacity: 0.2}
+        80% {opacity: 0.0}
+        100% { left: 82%}
+    }
+
+@media (max-width: 990px) {
+    #alone {
+        text-align: center;  
+        margin-left: 40px;  
+    }     
+}
+
+
+@media (max-width: 420px) {
+
+    .buttons {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #72c059;
+        border: none; 
+        box-shadow: 0 9px #59a63f; 
+        transform: translateY(1px);   
+        border-radius: 3px;    
+    }
+
+
+    #test2 { 
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        align-items: center;
+        margin-right: 10px;                  
+        background: linear-gradient(90deg, #4891ef 20px, transparent 1%) center, linear-gradient(#4891ef 20px, transparent 1%) center, #69a2f3;
+        background-size: 22px 22px;
+    }
+
+    #test4 img {   
+        height: 150px;
+        width: 150px;
+        border-radius: 50%; 
+        margin-left: -40px;  
+    }
+
+    #test5 h3 {
+        color: rgb(218, 223, 248);
+        font-weight: normal;
+        font-size: 20px;
+        width: 310px;
+        margin-left: -70px;
+    }
+    
+    #test5 h4 {
+        color: rgb(249, 250, 252);
+        font-weight: normal;
+        font-size: 20px;        
+        width: 310px;
+        margin-left: -70px;
+    }
+
+    #test6 img {
+        height: 60px;
+        width: 140px;    
+        margin-bottom: 30px; 
+        margin-left: 10px;
+    }
+   
+}
+
+#fa_iscons {margin: 10px 0;}
+
+#fa_iscons a
+{
+	padding-right:20px;
+	color: #fff;
+}
+
 
