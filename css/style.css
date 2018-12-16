@@ -1918,7 +1918,7 @@ Table of contents
 
 #test2 { 
     display: flex;         
-    background: linear-gradient(90deg, #4891ef 20px, transparent 1%) center, linear-gradient(#4891ef 20px, transparent 1%) center, #69a2f3;
+    background: #4891EF !important;
     background-size: 22px 22px;
 }
 
@@ -2121,7 +2121,7 @@ a.anchor {
 }
 
 #test5 h3 {
-    color: rgb(218, 223, 248);
+    color: rgb(252, 252, 252);
     font-weight: normal;
     font-size: 20px;
 }
