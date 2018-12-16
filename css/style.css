@@ -2113,8 +2113,8 @@ a.anchor {
 
 #test2 {       
     margin-bottom: 50px;
-    background: linear-gradient(90deg, #4891ef 20px, transparent 1%) center, linear-gradient(#4891ef 20px, transparent 1%) center, #69a2f3;
-	background-size: 22px 22px;
+    background: #4891EF !important;
+    background-size: 22px 22px;
 }
 
 
@@ -2347,8 +2347,8 @@ span.btn-sub-text {
         min-width: 100%;
         align-items: center;
         margin-right: 10px;                  
-        background: linear-gradient(90deg, #4891ef 20px, transparent 1%) center, linear-gradient(#4891ef 20px, transparent 1%) center, #69a2f3;
         background-size: 22px 22px;
+        background: #4891EF !important;
     }
 
     #test4 img {   
