@@ -1220,6 +1220,10 @@ Table of contents
      -o-transition: 0.3s;
      transition: 0.3s;
  }
+
+ #clients .section {
+     padding-bottom: 0px;
+ }
  /* ==== 7.1. testimonials === */
  
  #testimonials {
