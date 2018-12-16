@@ -1221,7 +1221,7 @@ Table of contents
      transition: 0.3s;
  }
 
- #clients .section {
+ #clients.section {
      padding-bottom: 0px;
  }
  /* ==== 7.1. testimonials === */
