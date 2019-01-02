@@ -1660,6 +1660,16 @@ Table of contents
     color: #224e87 !important;
 }
 
+#software-toolkit ul li.feature-item {
+    display: inline-block;
+}
+#software-toolkit img {
+    max-width: 100%;
+}
+#software-toolkit .col-md-3.with-border {
+    border-right: 2px solid #333333;
+}
+
  /*======= 11. Responsive =======*/
  
  @media (min-width: 768px) {
