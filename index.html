@@ -963,9 +963,17 @@
 			})();
 		</script>
 		<!-- End Inspectlet Asynchronous Code -->
-		<script>setTimeout(function() {
-			$('#freeOfferModal').modal();
-		}, 1000);</script>
+		<script>
+		$(document).ready(function() {
+			$(document).mousemove(function(e) {
+				if(e.pageY <= 10)
+				{
+				// Show the exit popup
+				$('#freeOfferModal').modal();
+				}
+			});
+		});
+		</script>
 		<!-- Modal -->
 		<div id="freeOfferModal" class="modal fade" role="dialog">
 		<div class="modal-dialog modal-lg">
