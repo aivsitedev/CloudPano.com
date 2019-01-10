@@ -97,7 +97,7 @@ jQuery(document).ready(function($) {
                     $('#subscribe-success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#subscribe-success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                        .append("<strong>Your free guide is on it's way! You can unsubscribe at any time.</strong>");
                     $('#subscribe-success > .alert-success')
                         .append('</div>');
                 }
