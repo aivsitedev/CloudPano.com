@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/three.min.js"></script>
 	<script src="js/panolens.min.js"></script>
+	<script src="js/ouibounce.min.js"></script>
 	<!-- Color style -->
 	<link href="css/colors/dodger-blue.css" rel="stylesheet" id="color-opt">
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -964,16 +965,6 @@
 		</script>
 		<!-- End Inspectlet Asynchronous Code -->
 		<script>
-		$(document).ready(function() {
-			$(document).mousemove(function(e) {
-				if(e.pageY <= 10)
-				{
-				// Show the exit popup
-				$('#freeOfferModal').modal();
-				}
-			});
-		});
-		</script>
 		<!-- Modal -->
 		<div id="freeOfferModal" class="modal fade" role="dialog">
 		<div class="modal-dialog modal-lg">
@@ -1036,6 +1027,17 @@
 					</div>
 			</div>
 		</div>
+		<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var _ouibounce = ouibounce(false, {
+        aggressive: true,
+        timer: 0,
+        callback: function() {
+            jQuery('#freeOfferModal').modal('show');
+        }
+    });
+});
+		</script>
 
 </body>
 
