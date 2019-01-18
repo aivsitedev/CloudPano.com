@@ -23,6 +23,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/three.min.js"></script>
 	<script src="js/panolens.min.js"></script>
+	<script src="js/ouibounce.min.js"></script>
+	
 	<!-- Color style -->
 	<link href="css/colors/dodger-blue.css" rel="stylesheet" id="color-opt">
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -101,14 +103,12 @@
 				<div class="row">
 					<div class="col-md-5">
 						<div class="home-wrapper home-wrapper-alt">
-							<h1 class="h1 font-light text-white w-full">360&#176; Virtual Tour Software</h1>
+							<h1 class="h1 font-light text-white w-full">360&#176; Virtual Tour Software for Real Estate Marketing</h1>
 							<!-- <p class="up-type-title">360 tour software <br />for <span class="animated-text"></span></p> -->
 							<!-- <br> -->
 							<div class="header-info">
-								<p>
-									CloudPano.com Creates 360 Virtual Tours For Real Estate Marketing.
-								</p>								
-								<li>Connect, Host and Publish Virtual Tours With a Few Clicks</li>
+					
+								<li>Publish Virtual Tours With a Few Clicks</li>
 								<li>No Coding Required</li>
 								<li>Keep Your Website Domain</li>
 							</div>
@@ -539,7 +539,7 @@
 						<h1 class="h1 feature aos-init aos-animate" data-aos="fade-up">Add or Embed 360 Virtual Tours On Any Website  </h1>
 	          				<h4 class="color aos-init aos-animate" data-aos="fade-up">(No App or Plugin Required)</h4>
 						<p class="feature-text aos-init aos-animate" data-aos="fade-up" style="margin: 30px auto;width: 90%;">
-							When you publish a 360 tour on CloudPano.com, you will automatically receive code based link you can add right onto your website. So uploading your tour for your cleint, or for you, is simple. We host the tour, you show it off to the world.
+							When you publish a 360 tour on CloudPano.com, you will automatically receive code based link you can add right onto your website. So uploading your tour for your client, or for you, is simple. We host the tour, you show it off to the world.
 						</p>
 						<!--<iframe allowfullscreen frameborder="0" width="100%" height="500" src="https://app.cloudpano.com/tours/859R893XXY"></iframe>-->
 						<iframe allowfullscreen frameborder="0" width="100%" height="500" src="https://app.cloudpano.com/tours/lTygoP3H1C"></iframe>
@@ -934,6 +934,81 @@
 			})();
 		</script>
 		<!-- End Inspectlet Asynchronous Code -->
+		
+		<!-- Modal -->
+		<div id="freeOfferModal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<!-- Modal content-->
+			<div class="modal-content">
+					<button type="button" style="right: 0px;
+					box-shadow: unset;
+					position: absolute;
+					border: unset;
+					top: 0px;" class="btn btn-default" data-dismiss="modal">X</button>
+					<div class="row">
+							<h1 class="h1 feature" data-aos="fade-up" style="text-align: center;">Build and host a tour on CloudPano for $10. <br />Sell to your client for hundreds.</h1>
+						<div class="col-md-6">
+							<p class="feature-text" data-aos="fade-up">
+								Sign-up for our emails and receive our complete guide to pricing and delivering virtual tours to clients: <strong>How to Earn an Extra $20,000 this Year as a 360&deg; Virtual Tour Provider</strong>
+							</p>
+							<div class="feature-heading" data-aos="fade-up">
+									<h4 class="color">Download our Free Guide</h4>
+								</div>
+							<ul style="line-height:2;" class="plan-stats list-unstyled">
+								<li>
+									<i class="far fa-check-square"></i>
+									<b>Pricing Strategy: How others price their tours to sell</b>
+								</li>
+								<li>
+									<i class="far fa-check-square"></i>
+									<b>Revenue Generation: How to collect monthly hosting fees</b>
+								</li>
+								<li>
+									<i class="far fa-check-square"></i>
+									<b>Marketing: How to market and bill your new service</b>
+								</li>
+								<li>
+									<i class="far fa-check-square"></i>
+									<b>Business Roadmap: How to run a business on CloudPano</b>
+								</li>
+							</ul>
+						</div>
+						<!-- end col -->
+						<div class="col-md-6 text-center" data-aos="slide-left">
+							<img src="https://entredot.org/wp-content/uploads/free-food-truck-business-guide-cover-178x300.png" />
+						</div>
+					</div>
+				</div>
+				<div>
+						<section id="subscribe" class="subscribe custom-bg">
+									<div class="row text-center aos-init aos-animate" data-aos="zoom-out">
+										<div class="col col-lg-12">
+											<h3 class="text-center">Subscribe to download now!</h3>
+										</div>
+										<div class="col col-lg-12">
+											<form style = "padding-bottom: 25px;" class="subscribe-form">
+												<input type="email" placeholder="Your email adress">
+												<button type="submit">Subscribe</button>
+												<div id="subscribe-success"></div>
+											</form>
+										</div>
+									</div>
+							</section>
+					</div>
+			</div>
+		</div>
+		<!-- <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var _ouibounce = ouibounce(false, {
+        aggressive: true,
+        timer: 0,
+        callback: function() {
+            jQuery('#freeOfferModal').modal('show');
+        }
+    });
+});
+		</script> -->
+
 </body>
 
 </html>
