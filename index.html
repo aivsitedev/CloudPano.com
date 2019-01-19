@@ -975,7 +975,7 @@
 						</div>
 						<!-- end col -->
 						<div class="col-md-6 text-center" data-aos="slide-left">
-							<img src="img/freeOffer.png" />
+							<img width='500px' src="img/freeOffer.png" />
 						</div>
 					</div>
 				</div>
@@ -987,7 +987,7 @@
 										</div>
 										<div class="col col-lg-12">
 											<form style = "padding-bottom: 25px;" class="subscribe-form">
-												<input type="email" placeholder="Your email adress">
+												<input type="email" placeholder="Your email address">
 												<button type="submit">Subscribe</button>
 												<div id="subscribe-success"></div>
 											</form>
@@ -997,8 +997,42 @@
 					</div>
 			</div>
 		</div>
+		<div id="slideOut">
+				<!--   // Tab -->
+				  <div style="display:block;" class="slideOutTab">🎉
+					  </div>
+					  <section id="subscribe" style="height: 200px;	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+					  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);"class="subscribe custom-bg">
+							<div class="row text-center aos-init aos-animate" data-aos="zoom-out">
+								<div class="col col-lg-12">
+									<h3 class="text-center" style="margin-bottom: 0px;">Earn $20,000 from virtual tours this year</h3>
+									<span style="color: white;
+									padding-bottom: 20px;
+									display: inline-block;">Subscribe to learn how to market 360 tours to your clients</span>
+								</div>
+								<div class="col col-lg-12">
+									<form style = "padding-bottom: 25px;" class="subscribe-form">
+										<input type="email" placeholder="Your email address">
+										<button type="submit">Subscribe</button>
+										<div id="subscribe-success"></div>
+									</form>
+								</div>
+							</div>
+					</section>
+				</div>
 		<script>
   document.addEventListener('DOMContentLoaded', function(){
+	$(function() {
+  $(".slideOutTab").delay(6000).fadeIn().animate({ top: "-10px" }, 'slow');
+});
+
+	this.$slideOut = $('#slideOut');
+
+// Slideout show
+this.$slideOut.find('.slideOutTab').on('click', function() {
+  $("#slideOut").toggleClass('showSlideOut');
+});
+
     var _ouibounce = ouibounce(false, {
         aggressive: true,
         timer: 0,
