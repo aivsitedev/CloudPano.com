@@ -3334,3 +3334,58 @@ span.btn-sub-text {
 	padding-right:20px;
 	color: #fff;
 }
+
+/* slide out */
+
+@keyframes nudge {
+  
+    0% {
+      transform: rotate(-7deg);
+    }
+    
+    33% {
+      transform: rotate(7deg);
+    }
+    
+    66% {
+      transform: rotate(-7deg);
+    }
+  }
+
+#slideOut {
+    position: fixed;
+    width: 80vw;
+height: 800px;
+top: 70vh;
+    right: -80vw;
+    /* Animation  */
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+  
+  
+  /* Display slideOut */
+  
+  .showSlideOut {
+    right: 0px !important;
+  }
+  
+  
+  /* Tab */
+  
+  .slideOutTab {
+    font-size: 2em;
+    padding-top: 170px;
+cursor: pointer;
+    margin-top: unset;
+    position: absolute;
+    left: -40px;
+    height: 40px;
+    width: 40px;
+    -webkit-text-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    text-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    border-radius: 15px 0px 0px 15px;
+    display:none;
+        animation: nudge .4s linear;
+  }
