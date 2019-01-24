@@ -997,52 +997,8 @@
 					</div>
 			</div>
 		</div>
-		<div id="slideOut">
-				<!--   // Tab -->
-				  <div style="display:block;" class="slideOutTab">🎉
-					  </div>
-					  <section id="subscribe" style="height: 200px;"class="subscribe custom-bg">
-							<div class="row text-center aos-init aos-animate" data-aos="zoom-out">
-								<div class="col col-lg-12">
-									<h3 class="text-center" style="margin-bottom: 0px;">Earn $20,000 from virtual tours this year</h3>
-									<span style="color: white;
-									padding-bottom: 20px;
-									display: inline-block;">Subscribe to learn how to market 360 tours to your clients</span>
-								</div>
-								<div class="col col-lg-10">
-									<form style = "padding-bottom: 25px;" class="subscribe-form">
-										<input type="email" placeholder="Your email address">
-										<button type="submit">Subscribe</button>
-										<div id="subscribe-success"></div>
-									</form>
-								</div>
-								<div class ="closeButton col col-lg-2" style="position: absolute;
-								right: 5px;
-								bottom: 0px;
-								color: white;
-								cursor: pointer;
-								margin-bottom: -10px;">
-									X Close
-								</div>
-							</div>
-					</section>
-				</div>
-		<script>
+				<script>
   document.addEventListener('DOMContentLoaded', function(){
-	$(function() {
-  $(".slideOutTab").delay(6000).fadeIn();
-});
-
-	this.$slideOut = $('#slideOut');
-
-// Slideout show
-this.$slideOut.find('.slideOutTab').on('click', function() {
-  $("#slideOut").toggleClass('showSlideOut');
-});
-this.$slideOut.find('.closeButton').on('click', function() {
-  $("#slideOut").toggleClass('showSlideOut');
-});
-
     var _ouibounce = ouibounce(false, {
         aggressive: true,
         timer: 0,
@@ -1052,6 +1008,35 @@ this.$slideOut.find('.closeButton').on('click', function() {
     });
 });
 		</script>
+		<!-- Start of Async Drift Code -->
+<script>
+	"use strict";
+	
+	!function() {
+	  var t = window.driftt = window.drift = window.driftt || [];
+	  if (!t.init) {
+		if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+		t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+		t.factory = function(e) {
+		  return function() {
+			var n = Array.prototype.slice.call(arguments);
+			return n.unshift(e), t.push(n), t;
+		  };
+		}, t.methods.forEach(function(e) {
+		  t[e] = t.factory(e);
+		}), t.load = function(t) {
+		  var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+		  o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+		  var i = document.getElementsByTagName("script")[0];
+		  i.parentNode.insertBefore(o, i);
+		};
+	  }
+	}();
+	drift.SNIPPET_VERSION = '0.3.1';
+	drift.load('87z54e34be4z');
+	</script>
+	<!-- End of Async Drift Code -->
+		<script src="https://my.hellobar.com/7f6b6c15978c3eb0da1c009446b0400ab94c0abb.js" type="text/javascript" charset="utf-8" async="async"></script>
 
 </body>
 
