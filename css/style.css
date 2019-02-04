@@ -3389,3 +3389,27 @@ cursor: pointer;
     display:none;
         animation: nudge .4s linear;
   }
+
+
+
+/*======= 14. Testimonial CSS (Intended to be common) =======*/
+
+
+.testimonial-block {       
+    margin-bottom: 0;
+    color:white;
+    padding:20px 0px;
+    background: #4891EF !important;
+    background-size: 22px 22px;
+}
+
+.testimonial-pic {
+    border-radius: 100%;
+}
+
+.testimonial-brand {
+    width: auto;
+    height: 60px;
+}
+
+
