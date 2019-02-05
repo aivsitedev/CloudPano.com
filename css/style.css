@@ -3416,6 +3416,8 @@ cursor: pointer;
 
 /*======= 15. Getting Started Page CSS  =======*/
 
+.getting-started { height:auto!important; }
+
 .getting-started .cart-sm {
     z-index: 1;
     position: relative;
