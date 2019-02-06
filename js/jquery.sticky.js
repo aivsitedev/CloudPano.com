@@ -29,12 +29,18 @@
         dwh = documentHeight - windowHeight,
         extra = (scrollTop > dwh) ? dwh - scrollTop : 0;
 
+
       for (var i = 0; i < sticked.length; i++) {
         var s = sticked[i],
           elementTop = s.stickyWrapper.offset().top,
-          etse = elementTop - s.topSpacing - extra;
+          // Brute force fix for secondary pages
+          // I recommend totally remove this plugin from the project.
+          // Same thing can be done with CSS only.
+          etse = 0;
+          //etse = elementTop - s.topSpacing - extra;
 
         if (scrollTop <= etse) {
+          
           if (s.currentTop !== null) {
             s.stickyElement
               .css('position', '')
@@ -44,6 +50,7 @@
           }
         }
         else {
+          
           var newTop = documentHeight - s.stickyElement.outerHeight()
             - s.topSpacing - s.bottomSpacing - scrollTop - extra;
           if (newTop < 0) {

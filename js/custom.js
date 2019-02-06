@@ -77,13 +77,21 @@ jQuery(document).ready(function($) {
     // scroll indicator
     $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
-        if (scrollTop > $("#about").offset().top) {
+        if( $('#about').length ) {
+            if ((scrollTop > $("#about").offset().top)) {
             $('.scroll-indicator').css('opacity', '1');
-        } else {
-            $('.scroll-indicator').css('opacity', '0');
-
+            } else { $('.scroll-indicator').css('opacity', '0'); }
         }
     });
+
+    $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+        if( $('#guarantee').length ) {
+            if ((scrollTop > $("#guarantee").offset().top)) {
+            $('.scroll-indicator').css('opacity', '1');
+            } else { $('.scroll-indicator').css('opacity', '0'); }
+        }
+    });        
 
     // FORM VALIDATION
 
