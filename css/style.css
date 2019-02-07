@@ -3569,7 +3569,7 @@ cursor: pointer;
 /* ------ Navbar mobile styles ------- */
 @media (max-width: 768px) {
      .navbar-collapse.in, .navbar-collapse.collapsing {
-         overflow-y: auto;
+         overflow: hidden;
          text-align: center;
          padding: 20px 0px;
          background: #3169b3;
