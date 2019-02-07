@@ -3469,8 +3469,12 @@ cursor: pointer;
      }
 }
 
+@media (max-width:640px) {
+     .getting-started ul { padding: 0; }
+}
+
 .getting-started .cart-sm .cart-bnr h1 {
-    display: block;
+    word-break: break-word;
     font-size: 64px;
     color: #4891ef;
     font-family: 'Lato', sans-serif;
@@ -3479,22 +3483,18 @@ cursor: pointer;
     margin-bottom: 20px;
 }
 
+@media (max-width:640px) {
+    .getting-started .cart-sm .cart-bnr h1 { font-size:36px; }
+}
+
 .getting-started .cart-sm .cart-bnr img {
-     margin: 20px;
+     margin: 20px 0px;
+     width: 100%;
+     max-width: 450px;
 }
 
 .getting-started .cart-sm .cart-bnr iframe {
      margin:0px 0px 20px 0px;
-}
-
-.getting-started .cart-sm .cart-bnr h1 .tt-br {
-     display: inline-block;
-    font-size: 64px;
-    color: #4891ef;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    position: relative;
-    margin-bottom: 0px;
 }
 
 @media (max-width: 440px) {
