@@ -3389,3 +3389,188 @@ cursor: pointer;
     display:none;
         animation: nudge .4s linear;
   }
+
+
+
+/*======= 14. Testimonial CSS (Intended to be common) =======*/
+
+
+.testimonial-block {       
+    margin-bottom: 0;
+    color:white;
+    padding:20px 0px;
+    background: #4891EF !important;
+    background-size: 22px 22px;
+}
+
+.testimonial-pic {
+    border-radius: 100%;
+}
+
+.testimonial-brand {
+    width: auto;
+    height: 60px;
+}
+
+
+
+/*======= 15. Getting Started Page CSS  =======*/
+
+.getting-started { height:auto!important; }
+
+.getting-started .cart-sm {
+    z-index: 1;
+    position: relative;
+    padding: 90px 0;
+}
+
+@media (max-width: 767px) {
+    .getting-started .cart-sm { padding: 90px 0 50px; }
+}
+
+.getting-started .cart-sm .cart-bnr {
+    background-color: #fff;
+    padding: 20px 50px 10px 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #3875c4;
+}
+
+@media (max-width: 320px) {
+    .getting-started .cart-sm .cart-bnr { padding: 20px 20px 10px 20px; }
+}
+
+@media (max-width: 320px) {
+     .getting-started .cart-sm .cart-bnr h1, .getting-started .cart-sm .cart-bnr h1 .tt-br {
+         font-size: 25px;
+     }
+}
+@media (max-width: 440px) {
+     .getting-started .cart-sm .cart-bnr h1, .getting-started .cart-sm .cart-bnr h1 .tt-br {
+         font-size: 30px;
+         padding-top: 0;
+     }
+}
+@media (max-width: 640px) {
+     .getting-started .cart-sm .cart-bnr h1 .tt-br {
+         display: block;
+         margin-bottom: 0;
+     }
+}
+@media (max-width: 640px) {
+     .getting-started .cart-sm .cart-bnr h1, .getting-started .cart-sm .cart-bnr h1 .tt-br {
+         font-size: 45px;
+     }
+}
+
+@media (max-width: 990px) {
+     .getting-started .cart-sm .cart-bnr h1, .getting-started .cart-sm .cart-bnr h1 .tt-br {
+         font-size: 60px;
+     }
+}
+
+@media (max-width:640px) {
+     .getting-started ul { padding: 0; }
+}
+
+.getting-started .cart-sm .cart-bnr h1 {
+    word-break: break-word;
+    font-size: 64px;
+    color: #4891ef;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+@media (max-width:640px) {
+    .getting-started .cart-sm .cart-bnr h1 { font-size:36px; }
+}
+
+.getting-started .cart-sm .cart-bnr img {
+     margin: 20px 0px;
+     width: 100%;
+     max-width: 450px;
+}
+
+.getting-started .cart-sm .cart-bnr iframe {
+     margin:0px 0px 20px 0px;
+}
+
+@media (max-width: 440px) {
+     .getting-started .cart-sm .cart-bnr h1 span {
+         font-size: 15px;
+         padding-top: 15px;
+     }
+}
+
+@media (max-width: 640px) {
+     .getting-started .cart-sm .cart-bnr h1 span {
+         font-size: 18px;
+     }
+}
+
+.getting-started .cart-sm .cart-bnr h1 span {
+    display: block;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.getting-started ul {
+    list-style-type: decimal;
+    text-align: left;
+    max-width: 800px;
+    width:100%;
+    margin: 0 auto;
+ }
+
+ .getting-started li {
+     margin: 20px;
+     font-size:18px;
+}
+
+ .getting-started .tutorial h2 {
+    color: #4891ef;
+    font-family: 'Lato', sans-serif;
+    font-size:36px;
+ }
+
+
+/*======= 16. Testimonials CSS  =======*/
+
+.testimonial-card {
+     width:93%;
+     margin:0 auto;
+     padding:15px 20px;
+     background:#cccccc21;
+}
+
+.testimonial-card img {
+    border-radius: 100%;
+    border: 3px solid #4891ef;
+    display:block;
+    margin:10px auto;
+    margin-bottom:5px;
+}
+
+.testimonial-card h4 {
+     line-height: 26px;
+     padding-left:30px;
+     background:url('../img/quote.png');
+     background-repeat: no-repeat;
+}
+
+.testimonial-card span {
+     display:block;
+     text-align: center;
+}
+
+
+/* ------ Navbar mobile styles ------- */
+@media (max-width: 768px) {
+     .navbar-collapse.in, .navbar-collapse.collapsing {
+         overflow: hidden;
+         text-align: center;
+         padding: 20px 0px;
+         background: #3169b3;
+}
