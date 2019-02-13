@@ -3573,4 +3573,33 @@ cursor: pointer;
          text-align: center;
          padding: 20px 0px;
          background: #3169b3;
+    }
 }
+
+
+/* ------ QA at main page ------- */
+#qa.qa-main {
+     margin: 90px 0px;
+     background:#f5f4f44d;
+}
+
+#qa.qa-main h1 span {
+     font-weight: 700;
+}
+
+#qa.qa-main .qa-cont-inr .qa-cont-fj {
+     margin: 0 auto 30px;
+}
+
+#qa.qa-main .qa-cont .qa-tt { background:#ffffff; }
+#qa.qa-main .qa-cont-inr .qa-cont-fj .qa-tt { background:#ffffff; }
+
+#qa.qa-main .qa-cont img, #qa.qa-main .qa-cont-inr .qa-cont-fj img  {
+    top: -20px;
+    width: 40px;
+    left: -20px;
+}
+
+#qa.qa-main .qa-hdr { margin-bottom:60px;  }
+#qa.qa-main .qa-cont { margin: 0 auto 60px; }
+
