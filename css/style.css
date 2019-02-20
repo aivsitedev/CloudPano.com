@@ -1898,13 +1898,11 @@ Table of contents
     display: block;
 }
 #access {
-    background-image: url('../img/CloudPano-access-bg.jpg');
     padding: 50px 0;
     display: block;
 }
 #access .acs-sec h2 {
     text-align: center;
-    color: #ffffff;
     font-size: 75px;
     font-weight: 600;
     display: block;
