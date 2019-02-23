@@ -9,11 +9,22 @@ jQuery(document).ready(function($) {
 
     "use strict";
 
+    $(window).on('load', function () {
+        AOS.refresh();
+    });
+
     // Preloader      
     $(window).load(function() {
         $('#preloader').fadeOut('slow', function() {
             $(this).remove();
         });
+    });
+
+
+    $("#show-details").click(function () {
+        console.log("Got it");        
+        $("#details").animate({"max-height": "10000px"}, 5500);
+        e.preventDefault();
     });
 
     //  Magnific Popup
@@ -82,16 +93,7 @@ jQuery(document).ready(function($) {
             $('.scroll-indicator').css('opacity', '1');
             } else { $('.scroll-indicator').css('opacity', '0'); }
         }
-    });
-
-    $(window).scroll(function() {
-        var scrollTop = $(window).scrollTop();
-        if( $('#guarantee').length ) {
-            if ((scrollTop > $("#guarantee").offset().top)) {
-            $('.scroll-indicator').css('opacity', '1');
-            } else { $('.scroll-indicator').css('opacity', '0'); }
-        }
-    });        
+    });       
 
     // FORM VALIDATION
 
@@ -305,6 +307,7 @@ jQuery(document).ready(function($) {
         easing: 'ease-out-back',
         duration: 1000
     });
+
 
 
 });
