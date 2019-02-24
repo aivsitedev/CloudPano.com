@@ -3612,16 +3612,21 @@ cursor: pointer;
      .buttons { margin: 0px 0px 30px 0px; }
 }
 
-.preview-img { margin-top:90px; }
+.preview-img { margin-top:110px; }
 
 .img-center { text-align:center; }
 
-.hm-label {
+.hero-under-text .hm-label {
     background: #337ab7;
     display: inline-block;
     padding: 6px;
     margin: 10px 10px 0px 0px;
     border-radius: 4px;
+    font-weight: 400;
+}
+
+.hero-under-text span {
+     font-weight:700;
 }
 
 .hero-under-text {
@@ -3708,7 +3713,7 @@ font-weight: bold;
 .software h2 { text-align:center; }
 .software .featureButton { margin:0 auto; }
 .starter.section.software img {
-     max-width:280px;
+     max-width:700px;
 }
 
 .starter .feature-list { margin-bottom: 30px; }
@@ -3719,6 +3724,10 @@ font-weight: bold;
      display: inline-block;
      text-align: initial;
      margin-left: 20px;
+}
+
+.starter.software h2 {
+     margin-top: 20px;
 }
 
 .additional h2 {
