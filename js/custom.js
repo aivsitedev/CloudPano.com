@@ -21,8 +21,7 @@ jQuery(document).ready(function($) {
     });
 
 
-    $("#show-details").click(function () {
-        console.log("Got it");        
+    $("#show-details").click(function (e) {
         $("#details").animate({"max-height": "10000px"}, 5500);
         e.preventDefault();
     });
