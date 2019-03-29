@@ -340,7 +340,7 @@
     <section id="about-big2" class="section" style="padding-bottom: unset;">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h1>How CloudPano works</h1>
+          <h1>How CloudPano Works</h1>
           <p class="text-muted sub-title">
             Create any tour with our easy three-step process.
           </p>
@@ -441,12 +441,12 @@
 	<section class="whatis section" id="whatis">
 	  <div class="container">
 	    <div class="row">
-			<div class="col-md-6" data-aos="slide-right">
-				<img src="img/iphone8-mockup.png">
+			<div class="col-md-6 text-center" data-aos="slide-right">
+				<img src="img/iphone8-mockup.png" class="img-responsive">
 			</div>
 			<div class="col-md-6">
 				<div class="feature-heading" data-aos="fade-up">
-				  <h4 class="color">Introduction</h4>
+				  <h4 class="color">Getting Started</h4>
 				</div>
 			  <h1 class="h1 feature" data-aos="fade-up">What is a 360 Virtual Tour?</h1>
 			  <p class="feature-text" data-aos="fade-up">
@@ -454,12 +454,17 @@
 				view and share a space in an immersive 360 environment. 
 				With a smartphone, the CloudPano viewer responds to your movement. 
 				This creates a responsive and immersive 
-				view of the property.<br>
+				view of the property.
 				Create your first 360 virtual tour in 5 minutes or less				 
 			  </p>
-			  <a href="http://app.cloudpano.com" class="featureButton">
-					Click Here</a
-				>
+			  <div class="what-btn-wrapper">
+				  <a href="http://app.cloudpano.com" class="featureButton">
+						Get Started</a
+					>
+					<a href="#screenshots" class="featureButton light">
+						View 360° Examples</a
+					>
+				</div>
 			</div>
 
 		</div>
@@ -1441,20 +1446,6 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-12 qa-cont-inr">
-            <div class="qa-cont-fj">
-              <img src="img/CloudPano_qa.png">
-              <div class="qa-tt">
-                <p>If I want to market 360 tours will CloudPano do you provide 
-                business marketing support?</p>
-              </div>
-              <div class="qa-dsc">
-                <p>CloudPano empowers virtual tour creators through Provider  School. 
-                A membership portal to help you learn actional business tips to 
-              market and sell virtual tour services.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -1683,8 +1674,34 @@
     </script>
     <!-- End Inspectlet Asynchronous Code -->
 
-    <!-- ManyChat -->
-    <script src="//widget.manychat.com/1794165787366692.js" async="async"></script>
+		<!-- Start of Async Drift Code -->
+<script>
+	"use strict";
+	
+	!function() {
+	  var t = window.driftt = window.drift = window.driftt || [];
+	  if (!t.init) {
+		if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+		t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+		t.factory = function(e) {
+		  return function() {
+			var n = Array.prototype.slice.call(arguments);
+			return n.unshift(e), t.push(n), t;
+		  };
+		}, t.methods.forEach(function(e) {
+		  t[e] = t.factory(e);
+		}), t.load = function(t) {
+		  var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+		  o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+		  var i = document.getElementsByTagName("script")[0];
+		  i.parentNode.insertBefore(o, i);
+		};
+	  }
+	}();
+	drift.SNIPPET_VERSION = '0.3.1';
+	drift.load('87z54e34be4z');
+	</script>
+	<!-- End of Async Drift Code -->
     
     <script
       src="https://my.hellobar.com/7f6b6c15978c3eb0da1c009446b0400ab94c0abb.js"
