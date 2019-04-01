@@ -3032,7 +3032,6 @@ p.small {
     background-color: #4891EF;
     color: #fff !important;
     transition: .5s all;
-
 }
 
 .previewText {
@@ -3813,3 +3812,21 @@ cursor: pointer;
 
 .starter.additional img { max-width: 500px; width:100%; }
 .starter.additional .detail-item img { max-width:200px; }
+
+/** Fixes for rearest of occasions. */
+.what-btn-wrapper .featureButton {
+	display:inline-block!important;
+	margin-right:10px;
+	text-align: center;
+    padding: 8px;
+}
+.what-btn-wrapper .featureButton.light {
+	background: #b8d2f3a8;
+	color: #2062ef;
+}
+
+.featureButton.light:hover {
+    background-color: #4891EF;
+    color: #fff !important;
+    transition: .5s all;
+}
