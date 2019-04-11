@@ -3721,6 +3721,16 @@ cursor: pointer;
           padding: 0px 10px;
      }
 }
+#kit.starter .buttons
+{
+	margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#kit .home-wrapper.home-wrapper-alt
+{
+	padding-bottom:0px;
+}    
 
 .starter .feature-list { 
      margin-bottom: 30px;
@@ -3830,3 +3840,4 @@ cursor: pointer;
     color: #fff !important;
     transition: .5s all;
 }
+
