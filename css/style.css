@@ -3580,7 +3580,7 @@ cursor: pointer;
 
 /* ------ QA at main page ------- */
 #qa.qa-main {
-     margin: 90px 0px;
+        margin: 90px 0px 0px 0px;
      background:#f5f4f44d;
 }
 
