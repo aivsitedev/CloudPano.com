@@ -1137,13 +1137,17 @@ Table of contents
  }
 
  .pricing-column .plan-subscribe {
-    position: absolute;
+   /* position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0;*/
     font-style: italic;
     font-size: 13px;
     color: #98a6ad;
+	
+	position: initial;
+	margin-top: 7px;
+
  }
  
  .pricing-column .plan-stats {
@@ -3576,7 +3580,7 @@ cursor: pointer;
 
 /* ------ QA at main page ------- */
 #qa.qa-main {
-     margin: 90px 0px;
+        margin: 90px 0px 0px 0px;
      background:#f5f4f44d;
 }
 
@@ -3839,5 +3843,16 @@ cursor: pointer;
     background-color: #4891EF;
     color: #fff !important;
     transition: .5s all;
+}
+
+/* Improving 993 line */
+.about-big .btn-custom#try-sample
+{
+	box-shadow: none;
+    margin-left: 15px;
+	margin-top:20px;
+    background: #2f72c7!important;
+    border: 2px solid #84b5f3!important;
+	
 }
 

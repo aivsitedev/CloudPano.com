@@ -96,9 +96,6 @@
               <a href="#feature1" class="nav-link">Features</a>
             </li>
             <li>
-              <a href="#pricing" class="nav-link">Price</a>
-            </li>
-            <li>
               <a href="/team" class="nav-link">Team</a>
             </li>
             <li>
@@ -308,7 +305,7 @@
 			</div>
 			<div id="particles-js"></div>
 		</section> -->
-    <section id="about-big" class="section" style="">
+    <section id="about-big" class="section about-big" style="">
       <div class="row about-story bg-light">
         <div class="container" style="padding-bottom:3em;">
           <div class="col-md-6 col-md-pull-1" data-aos="slide-right">
@@ -325,12 +322,15 @@
               <p class="story-text">
 				
 				CloudPano 360&#176; virtual tour software empowers you to create 360&#176; virtual 
-				tours. You will quickly create interactive virtual tours hassel free. 
+				tours. Quickly create interactive virtual tours hassel free. 
 				With a few clicks, you can upload, connect and publish a 360&#176; immersive 
 				experience. No coding required. Get started today, its free.
                 <a href="http://app.cloudpano.com"><u>Click here.</u></a>
               </p>
-              <a href="http://app.cloudpano.com" class="btn btn-custom"
+			  <a href="#screenshots" class="btn btn-custom"
+                >Browse Demos</a
+              >
+              <a href="http://app.cloudpano.com" id="try-sample" class="btn btn-custom"
                 >Try Our Sample</a
               >
             </div>
@@ -456,7 +456,7 @@
 				With a smartphone, the CloudPano viewer responds to your movement. 
 				This creates a responsive and immersive 
 				view of the property.
-				Create your first 360 virtual tour in 5 minutes or less.				 
+				Create your first 360 virtual tour in 5 minutes or less.
 			  </p>
 			  <div class="what-btn-wrapper">
 				  <a href="http://app.cloudpano.com" class="featureButton">
@@ -508,8 +508,8 @@
             >
           </div>
           <!-- end col -->
-          <div class="col-md-6 text-center" data-aos="slide-left">
-            <video
+          <div class="col-md-6 text-center" >
+            <!--<video
               class="featureVideo"
               width="700px"
               height="100%"
@@ -518,7 +518,8 @@
               loop="true"
             >
               <source src="img/feature1.mp4" type="video/mp4" />
-            </video>
+            </video>-->
+			<iframe src="https://player.vimeo.com/video/333632559?autoplay=1&loop=1&autopause=0&muted=1" allow="autoplay; fullscreen" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -962,13 +963,13 @@
             <p
               class="feature-text aos-init aos-animate"
               data-aos="fade-up"
-              style="margin: 30px auto;width: 90%;"
+              style="margin: 30px auto;width: 50%;"
             >
-              When you publish a 360 tour on CloudPano.com, you will
-              automatically receive code based link you can add right onto your
-              website. So uploading your tour for your client, or for you, is
-              simple. We host the tour, you show it off to the world.
+              When you publish a 360 virtual tour on CloudPano.com, you will
+              automatically receive a code based link. You can embed your tour right onto your
+              website. <br>We host the tour, you show it off to the world.
             </p>
+			<h4 class="color aos-init aos-animate">Here Is A Live Example</h4><br/>
             <!--<iframe allowfullscreen frameborder="0" width="100%" height="500" src="https://app.cloudpano.com/tours/859R893XXY"></iframe>-->
             <iframe
               id="embedTour"
@@ -1111,7 +1112,10 @@
                   <div class="plan-header text-center">
                     <h3 class="plan-title">Free</h3>
                     <h2 class="plan-price">$0</h2>
-                    <div class="plan-duration">per tour</div>
+                    <div class="plan-duration">Per Tour
+					<br>
+					<i>Expires in 120 days</i>
+					</div>
                   </div>
                   <ul class="plan-stats list-unstyled">
                     <li>
@@ -1150,8 +1154,11 @@
                 <div class="inner-box active">
                   <div class="plan-header text-center">
                     <h3 class="plan-title">Pro</h3>
-                    <h2 class="plan-price">$10</h2>
-                    <div class="plan-duration">Per Tour</div>
+                    <h2 class="plan-price">$15</h2>
+                    <div class="plan-duration">Per Tour
+					<br>
+					<i>Expires in 6 Months</i>
+					</div>
                   </div>
                   <ul class="plan-stats list-unstyled">
                     <li>
@@ -1199,11 +1206,9 @@
                 <div class="inner-box active">
                   <div class="plan-header text-center">
                     <h3 class="plan-title">Pro Plus</h3>
-                    <h2 class="plan-price">$49</h2>
+                    <h2 class="plan-price">$33</h2>
                     <div class="plan-duration">
-                      Per Month - Subscribe And Save <br />
-                      Or <br />
-                      Pay Once and Get On To Business
+                      Per Month - Paid Annually
                     </div>
                     <div class="plan-subscribe">
                       <a href="https://www.cloudpano.com/add-to-cart/">
@@ -1235,6 +1240,11 @@
                       <i class="far fa-check-square"></i
                       ><b>Embed On Your Website</b>
                     </li>
+					<li><i class="far fa-check-square"></i>Duplicate Tours With One Click</li>
+					<li><i class="far fa-check-square"></i>Set Tours To Private</li>
+					<li><i class="far fa-check-square"></i>Add Information Spots</li>
+					<li><i class="far fa-check-square"></i>Embed Media Into The Tours</li>
+					<li><i class="far fa-check-square"></i>User Management</li>
                     <li><i class="far fa-check-square"></i>Connect Hotspots</li>
                     <li>
                       <i class="far fa-check-square"></i>Unlimited 360 Photos
@@ -1260,9 +1270,9 @@
                   </ul>
                   <div class="text-center">
                     <a
-                      href="https://app.cloudpano.com"
+                      href="/add-to-cart"
                       class="btn btn-sm btn-custom"
-                      >Get Started Here</a
+                      >Create Pro Plus Account</a
                     >
                   </div>
                 </div>
@@ -1373,7 +1383,7 @@
       <div class="container" data-aos="zoom-in">
         <div class="row">
           <div class="col-lg-12 qa-hdr">
-            <h1>Common <span>Questions</span></h1>
+            <h1>Common Questions</h1>
           </div>
           <div class="col-lg-4 lst1">
             <div class="qa-cont">
