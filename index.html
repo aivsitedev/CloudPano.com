@@ -1684,7 +1684,7 @@
  #_form_33_ ._form-label,#_form_33_ ._form_element ._form-label { font-weight:bold; margin-bottom:5px; display:block; }
  #_form_33_._dark ._form-branding { color:#333; }
  #_form_33_._dark ._form-branding ._logo { background-image:url('https://d226aj4ao1t61q.cloudfront.net/jftq2c8s_aclogo_dk.png'); }
- #_form_33_ ._form_element { position:relative; margin-bottom:10px; font-size:0; max-width:100%; }
+ #_form_33_ ._form_element { position:relative; margin-bottom:0px; font-size:0; max-width:100%; }
  #_form_33_ ._form_element * { font-size:20px; }
  #_form_33_ ._form_element._clear { clear:both; width:100%; float:none; }
  #_form_33_ ._form_element._clear:after { clear:left; }
@@ -1760,7 +1760,7 @@
       </div>
       <div class="_button-wrapper _inline-style">
 	  <div class="_field-wrapper">
-          <input type="text" name="email" value="Type your email" required/>
+          <input id="_email-field" type="text" name="email" value="Type your email" required/>
         </div>
         <button id="_form_33_submit" class="_submit" type="submit">
           Send It To Me!
@@ -1774,6 +1774,12 @@
   </form>
 </div>
 <script type="text/javascript">
+var emailFieldClicked = false;
+$('#_email-field').on('click', function(event)
+{
+	if (!emailFieldClicked) $(this).val('');
+	emailFieldClicked = true;	
+});
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 1500) {
