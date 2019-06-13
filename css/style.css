@@ -3856,3 +3856,40 @@ cursor: pointer;
 	
 }
 
+.email-sign
+{
+	position: fixed;
+    bottom: 0;
+    height: auto;
+	width: 100%;
+	padding: 10px 0px;	
+	background: #146eb6;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;	
+	z-index:9999;
+}
+
+.email-sign form  { display:inline-block; }
+
+.email-sign p     { display: inline-block; }
+
+.email-sign input { border-radius:5px; }
+
+.email-sign input[type=email]
+{
+	display: inline-block;
+    background: #1263a3;
+    border: 0;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.email-sign input[type=submit]
+{
+	background: none;
+    border: solid 1px #fff;
+    padding: 5px 40px;
+    font-size: 16px;	
+}
+
