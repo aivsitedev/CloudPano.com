@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 	
 	$(document).scroll(function() {
 		var y = $(this).scrollTop();
-		if (y > 1500) $('.email-sign').fadeIn();
+		if (y > 900) $('.email-sign').fadeIn();
 	});
 
 	window.cfields = [];

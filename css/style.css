@@ -3944,7 +3944,7 @@ cursor: pointer;
 #_form_33_ ._form-content-right { margin-left:164px; }
 #_form_33_ ._form-branding { color:#fff; font-size:10px; clear:both; text-align:left; margin-top:30px; font-weight:100; }
 #_form_33_ ._form-branding ._logo { display:block; width:130px; height:14px; margin-top:6px; background-image:url('https://d226aj4ao1t61q.cloudfront.net/hh9ujqgv5_aclogo_li.png'); background-size:130px auto; background-repeat:no-repeat; }
-#_form_33_ ._form-label,#_form_33_ ._form_element ._form-label { font-weight:bold; margin-bottom:5px; display:block; }
+#_form_33_ ._form-label,#_form_33_ ._form_element ._form-label { font-weight:400; margin-bottom:5px; display:block; }
 #_form_33_._dark ._form-branding { color:#333; }
 #_form_33_._dark ._form-branding ._logo { background-image:url('https://d226aj4ao1t61q.cloudfront.net/jftq2c8s_aclogo_dk.png'); }
 #_form_33_ ._form_element { position:relative; margin-bottom:0px; font-size:0; max-width:100%; }
