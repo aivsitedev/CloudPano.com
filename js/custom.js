@@ -7,7 +7,7 @@
 
 jQuery(document).ready(function($) {
 	
-  // email capture form placeholder
+  // email capture form email placeholder
 	var emailFieldClicked = false;
 	$('#_email-field').on('click', function(event)
 	{
@@ -15,13 +15,13 @@ jQuery(document).ready(function($) {
       emailFieldClicked = true;	
 	});
   
-  // email capture form close
+  // email capture form close button
   $('#ecClose').on('click', function(e) 
   {
       $('#_form_33_').hide();
   });
 	
-  // close navbar when item clicked
+  // close navbar when link clicked
   $('#navbar-menu a').on('click', function(e) {
     $('#navbar-menu').collapse('hide');
   });
@@ -31,10 +31,14 @@ jQuery(document).ready(function($) {
   // show email capture form if it wasn't appeared yet  
 	$(document).scroll( function()
   {
-    if ( appeared ) return;    
+    if ( appeared ) { console.log('it was displayed'); return; }    
 		var y = $(this).scrollTop();
-		if (y > 900) $('.email-sign').fadeIn();
-    appeared = true; 
+		if (y > 900) 
+    {
+        $('.email-sign').fadeIn();
+        appeared = true; 
+    }
+    
 	});
 
 	window.cfields = [];
