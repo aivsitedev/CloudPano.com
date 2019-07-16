@@ -3906,6 +3906,24 @@ cursor: pointer;
     font-size: 16px;	
 }
 
+#_form_33_ .ec-close i
+{
+  color: #fff;
+  cursor:pointer;  
+}
+
+.ec-close { display:none; }
+
+@media (max-width: 638px)
+{
+  .ec-close { display:block; }
+}
+
+._form_element._x03484875._inline-style
+{
+  padding: 0px 20px!important;
+} 
+
 #_form_33_ { font-size:14px; line-height:1.6; font-family:arial, helvetica, sans-serif; margin:0; }
 #_form_33_ * { outline:0; }
 ._form_hide { display:none; visibility:hidden; }
@@ -4003,4 +4021,6 @@ cursor: pointer;
 #_form_33_ ._form-thank-you { position:relative; left:0; right:0; text-align:center; font-size:18px; }
 @media all and (min-width:320px) and (max-width:667px) { #_form_33_._inline-form._inline-style ._inline-style._button-wrapper { margin-top:20px !important; margin-left:0 !important; }
 }
+
+
 
