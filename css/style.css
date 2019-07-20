@@ -259,6 +259,12 @@ Table of contents
      letter-spacing: 0.04em;
      transition: 0.5s all;
 }
+
+ .btn-green-bordered:hover {
+     background-color: #ffffff !important;
+     color: #72c059!important;
+ }
+
  
  .btn-white-bordered:hover {
      background-color: #ffffff !important;
