@@ -6,6 +6,8 @@
 
 
 jQuery(document).ready(function($) {
+  
+  //$('#youtube-frame').trigger('click');
 	
   // email capture form email placeholder
 	var emailFieldClicked = false;
@@ -31,7 +33,7 @@ jQuery(document).ready(function($) {
   // show email capture form if it wasn't appeared yet  
 	$(document).scroll( function()
   {
-    if ( appeared ) { console.log('it was displayed'); return; }    
+    if ( appeared ) { return; }    
 		var y = $(this).scrollTop();
 		if (y > 900) 
     {
