@@ -111,6 +111,9 @@
             <a href="http://app.cloudpano.com" class="btn btn-white-bordered">
               Get Started - Sign In
             </a>
+            <a href="https://www.cloudpano.com/add-to-cart/" class="btn btn-green-bordered">
+              Upgrade
+            </a>
           </div>
         </div>
         <!--/Menu -->
@@ -584,7 +587,19 @@
             >
               <source src="img/feature1.mp4" type="video/mp4" />
             </video>-->
-            <iframe
+            
+            <iframe 
+              id="youtube-frame"
+              width="640"
+              height="360"
+              src="https://www.youtube.com/embed/jWx0mqkznH0?autoplay=1"
+              frameborder="0" 
+              allow="autoplay" 
+              allowfullscreen
+            ></iframe>
+            
+            
+            <!--<iframe
               src="https://player.vimeo.com/video/333632559?autoplay=1&loop=1&autopause=0&muted=1"
               allow="autoplay; fullscreen"
               width="640"
@@ -593,7 +608,7 @@
               webkitallowfullscreen
               mozallowfullscreen
               allowfullscreen
-            ></iframe>
+            ></iframe>-->
           </div>
         </div>
       </div>
@@ -1642,35 +1657,38 @@
       charset="utf-8"
       async="async"
     ></script> -->
-<div style="text-align: center;">
-  <form method="POST" action="https://zachcalhoun.activehosted.com/proc.php" id="_form_33_" class="email-sign _form _form_33 _inline-form _inline-style _dark" novalidate>
-    <input type="hidden" name="u" value="33" />
-    <input type="hidden" name="f" value="33" />
-    <input type="hidden" name="s" />
-    <input type="hidden" name="c" value="0" />
-    <input type="hidden" name="m" value="0" />
-    <input type="hidden" name="act" value="sub" />
-    <input type="hidden" name="v" value="2" />
-    <div class="_form-content">
-      <div class="_form_element _x03484875 _inline-style " >
-        <label class="_form-label">
-          Free Guide: How to price 360 tours to generate your next $20,000
-        </label>        
-      </div>
-      <div class="_button-wrapper _inline-style">
-	  <div class="_field-wrapper">
-          <input id="_email-field" type="text" name="email" value="Type your email" required/>
+<div style="width:100%;">
+  <div style="text-align: center; display:inline-block;">
+    <form method="POST" action="https://zachcalhoun.activehosted.com/proc.php" id="_form_33_" class="email-sign _form _form_33 _inline-form _inline-style _dark" novalidate>
+      <input type="hidden" name="u" value="33" />
+      <input type="hidden" name="f" value="33" />
+      <input type="hidden" name="s" />
+      <input type="hidden" name="c" value="0" />
+      <input type="hidden" name="m" value="0" />
+      <input type="hidden" name="act" value="sub" />
+      <input type="hidden" name="v" value="2" />
+      <div class="_form-content">
+        <div class="_form_element _x03484875 _inline-style " >
+          <label class="_form-label">
+            Free Guide: How to price 360 tours to generate your next $20,000
+          </label>        
         </div>
-        <button id="_form_33_submit" class="_submit" type="submit">
-          Send It To Me!
-        </button>
+        <div class="_button-wrapper _inline-style">
+      <div class="_field-wrapper">
+            <input id="_email-field" type="text" name="email" value="Type your email" required/>
+          </div>
+          <button id="_form_33_submit" class="_submit" type="submit">
+            Send It To Me!
+          </button>
+        </div>
+        <div style="position: absolute; right: 20px; top: 10%;"><a id="ecClose" class="ec-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div></a>
+        <div class="_clear-element">
+        </div>
       </div>
-      <div class="_clear-element">
+      <div class="_form-thank-you" style="display:none;">
       </div>
-    </div>
-    <div class="_form-thank-you" style="display:none;">
-    </div>
-  </form>
+    </form>
+  </div>  
 </div>
 
   </body>

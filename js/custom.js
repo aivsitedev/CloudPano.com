@@ -6,17 +6,41 @@
 
 
 jQuery(document).ready(function($) {
+  
+  //$('#youtube-frame').trigger('click');
 	
+  // email capture form email placeholder
 	var emailFieldClicked = false;
 	$('#_email-field').on('click', function(event)
 	{
-		if (!emailFieldClicked) $(this).val('');
-		emailFieldClicked = true;	
+      if (!emailFieldClicked) $(this).val('');
+      emailFieldClicked = true;	
 	});
+  
+  // email capture form close button
+  $('#ecClose').on('click', function(e) 
+  {
+      $('#_form_33_').hide();
+  });
 	
-	$(document).scroll(function() {
+  // close navbar when link clicked
+  $('#navbar-menu a').on('click', function(e) {
+    $('#navbar-menu').collapse('hide');
+  });
+  
+  var appeared = false;
+ 
+  // show email capture form if it wasn't appeared yet  
+	$(document).scroll( function()
+  {
+    if ( appeared ) { return; }    
 		var y = $(this).scrollTop();
-		if (y > 1500) $('.email-sign').fadeIn();
+		if (y > 900) 
+    {
+        $('.email-sign').fadeIn();
+        appeared = true; 
+    }
+    
 	});
 
 	window.cfields = [];

@@ -247,6 +247,25 @@ Table of contents
      transition: 0.5s all;
  }
  
+.btn-green-bordered
+{  
+     margin-left:10px;
+     padding: 8px 24px !important;
+     background-color: #72c059!important;
+     border: 2px solid rgb(147, 226, 120) !important;
+     color: #ffffff;
+     border-radius: 50px;
+     font-weight: 500;
+     letter-spacing: 0.04em;
+     transition: 0.5s all;
+}
+
+ .btn-green-bordered:hover {
+     background-color: #ffffff !important;
+     color: #72c059!important;
+ }
+
+ 
  .btn-white-bordered:hover {
      background-color: #ffffff !important;
  }
@@ -3906,6 +3925,24 @@ cursor: pointer;
     font-size: 16px;	
 }
 
+#_form_33_ .ec-close i
+{
+  color: #fff;
+  cursor:pointer;  
+}
+
+.ec-close { display:none; }
+
+@media (max-width: 638px)
+{
+  .ec-close { display:block; }
+}
+
+._form_element._x03484875._inline-style
+{
+  padding: 0px 20px!important;
+} 
+
 #_form_33_ { font-size:14px; line-height:1.6; font-family:arial, helvetica, sans-serif; margin:0; }
 #_form_33_ * { outline:0; }
 ._form_hide { display:none; visibility:hidden; }
@@ -3944,7 +3981,7 @@ cursor: pointer;
 #_form_33_ ._form-content-right { margin-left:164px; }
 #_form_33_ ._form-branding { color:#fff; font-size:10px; clear:both; text-align:left; margin-top:30px; font-weight:100; }
 #_form_33_ ._form-branding ._logo { display:block; width:130px; height:14px; margin-top:6px; background-image:url('https://d226aj4ao1t61q.cloudfront.net/hh9ujqgv5_aclogo_li.png'); background-size:130px auto; background-repeat:no-repeat; }
-#_form_33_ ._form-label,#_form_33_ ._form_element ._form-label { font-weight:bold; margin-bottom:5px; display:block; }
+#_form_33_ ._form-label,#_form_33_ ._form_element ._form-label { font-weight:400; margin-bottom:5px; display:block; }
 #_form_33_._dark ._form-branding { color:#333; }
 #_form_33_._dark ._form-branding ._logo { background-image:url('https://d226aj4ao1t61q.cloudfront.net/jftq2c8s_aclogo_dk.png'); }
 #_form_33_ ._form_element { position:relative; margin-bottom:0px; font-size:0; max-width:100%; }
@@ -4003,4 +4040,6 @@ cursor: pointer;
 #_form_33_ ._form-thank-you { position:relative; left:0; right:0; text-align:center; font-size:18px; }
 @media all and (min-width:320px) and (max-width:667px) { #_form_33_._inline-form._inline-style ._inline-style._button-wrapper { margin-top:20px !important; margin-left:0 !important; }
 }
+
+
 
