@@ -796,7 +796,7 @@ Table of contents
  /*======= 3. Home =======*/
  
  .home-fullscreen {
-     /*background-image: url('http://placehold.it/1200x800');*/
+    background-image: url(../img/hero/add-to-cart.jpg);
      background-attachment: fixed;
      -webkit-background-size: cover;
      background-size: cover;
@@ -815,7 +815,7 @@ Table of contents
      left: 0;
      right: 0;
      position: absolute;
-     background-color: rgba(144, 87, 216, 0.81);
+     /* background-color: rgba(144, 87, 216, 0.81); */
  }
  
  .home-wrapper {
@@ -826,7 +826,7 @@ Table of contents
      padding: 145px 0px 0px 0px !important;
      position: relative;
      z-index: 100;
-     margin-bottom: -50px;
+     /* margin-bottom: -50px; */
  }
  
  .home-sm .h1 {
@@ -1766,7 +1766,8 @@ Table of contents
 #add-to-cart .cart-sm {
     z-index: 1;
     position: relative;
-    padding: 90px 0;
+    padding: 60px 0;
+    margin-bottom: 30px;
 }
 #add-to-cart .cart-sm .cart-bnr {
     background-color: #fff;
@@ -1831,6 +1832,12 @@ Table of contents
     box-sizing: border-box;
     padding: 20px;
     position: relative;
+    }
+
+.prc-box:hover{
+    background: rgb(0,0,0,.2);
+    transition: 500ms;
+    cursor:pointer;
 }
 #add-to-cart .cart-sm .cart-bnr .pricing-sec .pricing .prc-box h3 {
     font-size: 46px;
@@ -1983,7 +1990,7 @@ Table of contents
     background-color: #69abff;
     color: #fff;
     text-align: center;
-    padding: 60px 0;
+    padding: 30px 0;
     display: block;
 }
 #plans .plans-sec {
@@ -2062,7 +2069,7 @@ Table of contents
     margin: 0;
 }
 #qa {
-    background: repeating-linear-gradient( -45deg, #e4e4e4 , #fff 3px, #fff 1px, #fff 10px );
+    transform: scale(.8);
     padding: 50px 0;
     text-align: center;
     display: block;

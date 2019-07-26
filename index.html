@@ -100,7 +100,7 @@
               <a href="/contact" class="nav-link">Contact</a>
             </li>
             <li>
-              <a href="/add-to-cart" class="nav-link">Go Pro Plus</a>
+              <a href="/add-to-cart" class="nav-link">Features - Go Pro Plus</a>
             </li>
             <!-- <li>
 						<a href="tour-hosting" class="nav-link">Tour Hosting Details</a>
@@ -122,8 +122,10 @@
     </div>
     <!-- End navbar-custom -->
     <!-- Home -->
-    <section class="bg-custom home-fullscreen home" id="home">
-      <div class="home-sm">
+    <section style="height:100%;background: linear-gradient(to bottom, rgb(0,0,0,.7) 0%,rgba(255,255,255,0.7) 100%), url(img/hero/hero3.jpg) repeat 0 0;     background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;" class="bg-custom home-fullscreen home" id="home">
+      <div class="home-sm" style="    margin-bottom: 10%;" >
         <div class="container">
           <div class="row">
             <div class="col-md-5">
@@ -141,7 +143,7 @@
                 <div class="row">
                   <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1" id="try">
                     <a href="http://app.cloudpano.com" class="buttons"
-                      >Try It Out<z></z
+                      >Try It Now<z></z
                     ></a>
                   </div>
                   <div
@@ -171,7 +173,7 @@
                     <!-- PUT CONTENTS HERE -->
                     <script>
                       var panorama, viewer;
-                      panorama = new PANOLENS.ImagePanorama("img/1.jpg");
+                      panorama = new PANOLENS.ImagePanorama("https://bigdatahomes.azureedge.net/tours/3376a822e6d0f1da74a4d1288bfd767a-05-min.jpg");
                       viewer = new PANOLENS.Viewer({
                         container: document.querySelector("#headerScreen"),
                         controlBar: false
@@ -415,15 +417,38 @@
               <h4 class="color aos-init aos-animate">Here Is A Live Example</h4>
               <br />
               <!--<iframe allowfullscreen frameborder="0" width="100%" height="500" src="https://app.cloudpano.com/tours/859R893XXY"></iframe>-->
-              <iframe
+              <div id="embedTourContainer" style="padding:unset; margin:unset;"><iframe
                 id="embedTour"
                 allowfullscreen
                 allow="vr;accelerometer;gyroscope;fullscreen;xr;"
                 frameborder="0"
                 width="100%"
                 height="500"
+                scrolling="no"
                 src="https://app.cloudpano.com/tours/lTygoP3H1C"
               ></iframe>
+              <!-- <script>
+              //try to disable scroll events sent to iframe...
+              document.addEventListener("DOMContentLoaded", function(event) { 
+                var el = document.getElementById('embedTourContainer');
+               el.addEventListener("scroll", function(e){
+                  e.preventDefault();
+                  e.stopPropagation();
+                  return false;}, false);
+                  document.getElementById('embedTour').
+               el.addEventListener("touchmove", function(e){
+                  e.preventDefault();
+                  e.stopPropagation();
+                  return false;}, false);
+                  document.getElementById('embedTour').
+               el.addEventListener("mousewheel", function(e){
+                  e.preventDefault();
+                  e.stopPropagation();
+                  return false;}, false);  //do work
+});
+
+</script> -->
+</div>
             </div>
             <!-- end col -->
           </div>
