@@ -6,6 +6,14 @@
 
 
 jQuery(document).ready(function($) {
+	
+	$('#embedTourContainer').on('click', function(event) {
+		$('#embedTour').css('pointer-events', 'auto');
+	});
+	
+	$('#embedTourContainer').mouseleave(function(e) { 
+		$('#embedTour').css('pointer-events', 'none');
+	});
   
   //$('#youtube-frame').trigger('click');
 	
