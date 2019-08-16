@@ -3951,7 +3951,7 @@ cursor: pointer;
   padding: 0px 20px!important;
 } 
 
-/*---------- new-g page styles -------------*/
+/*---------- New-g page styles -------------*/
 .mfp-content .demo-call-form 
 {
 	margin: 0 auto;
@@ -3960,12 +3960,14 @@ cursor: pointer;
 	padding: 20px 40px;
 }
 
-.demo-call-form .mfp-close {
+.demo-call-form .mfp-close
+{
     color: #ffffff!important;
 }
 
-.demo-call-form h2 {
-font-weight: 700;
+.demo-call-form h2
+{
+	font-weight: 700;
     text-align: center;
     color: #5b86bc;
     margin: 10px 0px 0px 0px;
@@ -3973,7 +3975,8 @@ font-weight: 700;
     text-transform: uppercase;
 }
 
-.subtext {
+.subtext
+{
     padding: 0px 6px;
     display: block;
     font-size: 24px;
@@ -3983,7 +3986,8 @@ font-weight: 700;
     text-align: center;
 }
 
-.form-41-header {
+.form-41-header
+{
     text-align: center;
     padding: 8px;
     position: relative;
@@ -3991,6 +3995,25 @@ font-weight: 700;
     top: -36px;
     left: -35px;
     background: #468fee;
+}
+
+#_form_41_ ._submit:hover 
+{
+	
+	background: #459438 !important;
+	position:relative;
+	top:2px;
+}
+
+@media all and (min-width:320px) and (max-width:667px)
+{
+	.form-41-header { display:none; }
+	.demo-call-form .mfp-close
+	{
+		color: #8c8c8c!important;
+	}
+	#_form_41_ { padding: 22px 20px!important; }
+
 }
 
  #_form_41_ { font-size:14px; line-height:1.6; font-family:arial, helvetica, sans-serif; margin:0; }
@@ -4013,7 +4036,7 @@ font-weight: 700;
  #_form_41_ ._submit { -webkit-appearance: none;
     cursor: pointer;
     font-family: arial, sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
     text-align: center;
     background: #62c751 !important;
@@ -4034,7 +4057,10 @@ font-weight: 700;
  #_form_41_ ._form-content-right { margin-left:164px; }
  #_form_41_ ._form-branding { color:#fff; font-size:10px; clear:both; text-align:left; margin-top:30px; font-weight:100; }
  #_form_41_ ._form-branding ._logo { display:block; width:130px; height:14px; margin-top:6px; background-image:url('https://d226aj4ao1t61q.cloudfront.net/hh9ujqgv5_aclogo_li.png'); background-size:130px auto; background-repeat:no-repeat; }
- #_form_41_ ._form-label,#_form_41_ ._form_element ._form-label { font-weight:bold; margin-bottom:5px; display:block; }
+ #_form_41_ ._form-label,#_form_41_ ._form_element ._form-label {display: block;
+    font-size: 16px;
+    color: #595959; font-weight:300;
+    text-align: center; }
  #_form_41_._dark ._form-branding { color:#333; }
  #_form_41_._dark ._form-branding ._logo { background-image:url('https://d226aj4ao1t61q.cloudfront.net/jftq2c8s_aclogo_dk.png'); }
  #_form_41_ ._form_element { position:relative; margin-bottom:10px; font-size:0; max-width:100%; }
@@ -4077,7 +4103,7 @@ font-weight: 700;
  .pika-single { z-index:10000001 !important; }
  @media all and (min-width:320px) and (max-width:667px) { ::-webkit-scrollbar { display:none; }
  #_form_41_ { margin:0; width:100%; min-width:100%; max-width:100%; box-sizing:border-box; }
- #_form_41_ * { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; font-size:1em; }
+ #_form_41_ * { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;  }
  #_form_41_ ._form-content { margin:0; width:100%; }
  #_form_41_ ._form-inner { display:block; min-width:100%; }
  #_form_41_ ._form-title,#_form_41_ ._inline-style { margin-top:0; margin-right:0; margin-left:0; }
@@ -4103,7 +4129,7 @@ font-weight: 700;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 	background:url(../img/form-background.png);
-    *: ;
+	background-size:cover;
     zoom: 1;
     width: 500px;
     -moz-border-radius: 0px !important;
@@ -4122,7 +4148,7 @@ font-weight: 700;
  @media all and (min-width:320px) and (max-width:667px) { #_form_41_._inline-form._inline-style ._inline-style._button-wrapper { margin-top:20px !important; margin-left:0 !important; }
  }
 
-/*---------- end of new-g page styles -------------*/
+/*---------- end of New-g page styles -------------*/
 
 #_form_33_ { font-size:14px; line-height:1.6; font-family:arial, helvetica, sans-serif; margin:0; }
 #_form_33_ * { outline:0; }
