@@ -14,6 +14,7 @@ jQuery(document).ready(function($) {
 	$('#embedTourContainer').mouseleave(function(e) { 
 		$('#embedTour').css('pointer-events', 'none');
 	});
+	
   
   //$('#youtube-frame').trigger('click');
 	
