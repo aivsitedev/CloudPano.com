@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="real estate tour with CloudPano"
+      content="Real Estate Tour with CloudPano"
     />
     <meta name="author" content="BigHero" />
-    <title>real estate tour</title>
+    <title>Real Estate Tour</title>
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,300,700"
@@ -229,9 +229,28 @@
       <div class="row ">
         <div class="container" style="padding-bottom:1em; text-align:center;">
 			<div class="col-md-12">
-				<h1>real estate tour</h1>							
+				<h1>Real Estate Tour</h1>							
 				<iframe width="800" height="450" style="margin:20px 0px" src="https://www.youtube.com/embed/oo_rpkQquQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p></p>
+				 
+				 <div>
+				 <a href="#opened" id="openDesc" class="btn btn-custom" style="box-shadow: none;
+    margin: 0px 15px;">Learn more</a>
+				  <a
+					href="https://blog.cloudpano.com/1215-2/"
+					class="btn btn-custom"
+					style="box-shadow: none;
+    margin: 0px 15px;
+    background-color: #2f72c7!important;"
+					>Training</a
+				  >
+				  </div>
+				<p id="target-description" style="display:none; margin: 40px auto;
+    margin-bottom: 0px;
+    background: #f3f3f3;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;"></p>
+
 			</div>
         </div>
       </div>
@@ -1595,6 +1614,12 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-124568578-1"
     ></script>
+	<script type="text/javascript">
+		$('#openDesc').on('click', function(event) {
+			event.preventDefault();
+			$('#target-description').show(500);
+		})					
+	</script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
