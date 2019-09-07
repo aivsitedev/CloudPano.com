@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Virtual Real Estate with CloudPano"
+    />
+    <meta name="author" content="BigHero" />
+    <title>Virtual Real Estate</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Device Mockups -->
+    <link rel="stylesheet" type="text/css" href="../js/device-mockups.min.css" />
+    <!-- Font Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
+    <!-- Aos Animation -->
+    <link rel="stylesheet" href="../css/aos.css" />
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/three.min.js"></script>
+    <script src="../js/panolens.min.js"></script>
+    <script src="../js/ouibounce.min.js"></script>
+
+    <!-- Color style -->
+    <link href="../css/colors/dodger-blue.css" rel="stylesheet" id="color-opt" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicon  -->
+    <link rel="icon" href="../img/favicon.ico" />
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar-menu" id="darya">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar navbar-custom sticky" role="navigation" id="sticky-nav">
+      <div class="container">
+        <!-- Navbar-header -->
+        <div class="navbar-header">
+          <!-- Responsive menu button -->
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->
+          <a class="logo" href="../index.html">
+            <img
+              src="../img/logo.png"
+              alt="logo"
+              class="navbar-brand img-responsive"
+            />
+            <p style="line-height: 50px; display: inline-block;">CloudPano</p>
+          </a>
+        </div>
+        <!-- end navbar-header -->
+        <!-- menu -->
+        <div class="navbar-collapse collapse" id="navbar-menu">
+          <!-- Navbar left -->
+          <ul class="nav navbar-nav nav-custom-left">
+            <!-- <li>
+              <a href="/features" class="nav-link">Features</a>
+            </li> -->
+            <li>
+                <a href="#screenshots" class="nav-link">Demos</a>
+              </li>
+            <li>
+              <a href="/getting-started" class="nav-link">New to 360?</a>
+            </li>
+            <li>
+              <a href="/team" class="nav-link">Team</a>
+            </li>
+            <li>
+              <a href="/contact" class="nav-link">Contact</a>
+            </li>
+            <li>
+              <a href="/add-to-cart" class="nav-link">Features - Go Pro Plus</a>
+            </li>
+            <!-- <li>
+						<a href="tour-hosting" class="nav-link">Tour Hosting Details</a>
+					</li> -->
+          </ul>
+          <!-- Navbar right -->
+          <div class="nav navbar-nav navbar-right hidden-sm">
+            <a href="http://app.cloudpano.com" class="btn btn-white-bordered">
+              Get Started - Sign In
+            </a>
+            <a href="https://www.cloudpano.com/add-to-cart/" class="btn btn-green-bordered">
+              Upgrade
+            </a>
+          </div>
+        </div>
+        <!--/Menu -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- End navbar-custom -->
+    <!-- Home -->
+    <section style="height:100%;background: linear-gradient(to bottom, rgb(0,0,0,.7) 0%,rgba(255,255,255,0.7) 100%), url(../img/hero/hero3.jpg) repeat 0 0;     background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;" class="bg-custom home-fullscreen home" id="home">
+      <div class="home-sm" style="    margin-bottom: 10%;" >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="home-wrapper home-wrapper-alt">
+                <h1 class="h1 font-light text-white w-full">
+                  360&#176; Virtual Tour Software
+                </h1>
+                <!-- <p class="up-type-title">360 tour software <br />for <span class="animated-text"></span></p> -->
+                <!-- <br> -->
+                <div class="header-info">
+                  <li>Publish Virtual Tours With a Few Clicks</li>
+                  <li>No Coding Required</li>
+                  <li>Keep Your Website Domain</li>
+                </div>
+                <div class="row">
+                  <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1" id="try">
+                    <a href="http://app.cloudpano.com" class="buttons"
+                      >Try It Now<z></z
+                    ></a>
+                  </div>
+                  <div
+                    class="col-xs-10 col-sm-11 col-md-11 col-lg-11"
+                    id="alone"
+                  >
+                    <span class="btn-sub-text"
+                      >100% free. No credit card required. Sign up in
+                      seconds.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+            <div class="col-md-6 col-md-offset-1 text-center">
+              <!-- <img src="img/header-mobile.png" alt="header mobile" data-aos="zoom-out" class="img-responsive header-mobile"> -->
+              <div id="featureDevice" class="device-wrapper">
+                <div
+                  class="device"
+                  data-device="iPhone7"
+                  data-orientation="landscape"
+                  data-color="white"
+                >
+                  <div id="headerScreen" class="screen">
+                    <!-- <iframe name="iframe-example" height="100%" width="100%" src="https://app.cloudpano.com/tours/859R893XXY/"></iframe> -->
+                    <!-- PUT CONTENTS HERE -->
+                    <script>
+                      var panorama, viewer;
+                      panorama = new PANOLENS.ImagePanorama("https://bigdatahomes.azureedge.net/tours/3376a822e6d0f1da74a4d1288bfd767a-05-min.jpg");
+                      viewer = new PANOLENS.Viewer({
+                        container: document.querySelector("#headerScreen"),
+                        controlBar: false
+                      });
+                      viewer.add(panorama);
+                      viewer.getControl().autoRotateSpeed = 0.1;
+                      viewer.getControl().autoRotate = true;
+                      viewer.getControl().noZoom = true;
+                      var width = document.getElementById("headerScreen")
+                        .offsetWidth;
+                      var height = document.getElementById("headerScreen")
+                        .offsetHeight;
+                      viewer.onWindowResize(width, height);
+                    </script>
+                    <div id="infoi" class="noMobile">
+                      <p>Touch and Move</p>
+                      <p></p>
+                    </div>
+                  </div>
+
+                  <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Home -->
+    <!-- About -->
+   
+    <!-- <section class="section contact-section" id="contact">
+			<div class="container contact-info" data-aos="zoom-out">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Present Any Property In Virtual Reality With CloudPano.com</h1>
+							<p class="title-sub">Try it free. No credit card required. Instant set-up.</p>
+					</div>
+				</div>
+				<div id="subscribe" class="row">
+					<div class="col-md-12">
+						<form class="subscribe-form">
+							<a href="http://app.cloudpano.com" class="btn btn-white-bordered">Try it free</a>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="particles-js"></div>
+		</section> -->
+	<section id="target" class="section target" style="padding-bottom:unset;">
+      <div class="row ">
+        <div class="container" style="padding-bottom:1em; text-align:center;">
+			<div class="col-md-12">
+				<h1>Virtual Real Estate</h1>							
+				<iframe width="800" height="450" style="margin:20px 0px" src="https://www.youtube.com/embed/qHdtXqAcv7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				 
+				 <div>
+				 <a href="#opened" id="openDesc" class="btn btn-custom" style="box-shadow: none;
+    margin: 0px 10px;">Learn more</a>
+				  <a
+					href="https://blog.cloudpano.com/1215-2/"
+					class="btn btn-custom"
+					target="_blank"
+					style="box-shadow: none;
+    margin: 0px 10px;
+    background-color: #2f72c7!important;"
+					>Training</a
+				  >
+				  </div>
+				<p id="target-description" style="display:none; margin: 40px auto;
+    margin-bottom: 0px;
+    background: #f3f3f3;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;"></p>
+
+			</div>
+        </div>
+      </div>
+    </section>
+    <section id="about-big" class="section about-big" style="padding-bottom:unset;">
+      <div class="row about-story">
+        <div class="container" style="padding-bottom:1em;">
+          <div class="col-md-6 col-md-pull-1" data-aos="slide-right">
+            <img
+              src="../img/screenshots\preview-fl.png"
+              alt="img"
+              class="img-responsive previewMajor"
+            />
+          </div>
+          <div class="col-md-6" data-aos="slide-left">
+            <div class="about-story-content">
+              <h1>Create And Display Virtual Tours In 360 and VR</h1>
+              <hr />
+              <p class="story-text">
+                CloudPano 360&#176; virtual tour software empowers you to create
+                360&#176; virtual tours. Quickly create interactive virtual
+                tours hassel free. With a few clicks, you can upload, connect
+                and publish a 360&#176; immersive experience. No coding
+                required. Get started today, its free.
+                <a href="http://app.cloudpano.com"><u>Click here.</u></a>
+              </p>
+              <a href="#screenshots" class="btn btn-custom">Browse Demos</a>
+              <a
+                href="http://app.cloudpano.com"
+                id="try-sample"
+                class="btn btn-custom"
+                >Try Our Sample</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about-big2" class="section bg-light" style="padding-bottom: unset;">
+      <div class="row">
+        <div class="col-sm-12 text-center ">
+          <h1>How CloudPano Works</h1>
+          <p class="text-muted sub-title">
+            Create a 360° virtual tour with our easy three-step process.
+          </p>
+        </div>
+      </div>
+      <div class="row about-story">
+        <div class="container" style="padding-bottom:4em;">
+          <div class="col-md-3 col-pull-left-1" data-aos="slide-right">
+            <div
+              class="icon"
+              style="height: 150px;
+								overflow: hidden;"
+            >
+              <img
+                src="../img/process\capture.png"
+                alt="img"
+                class="img-responsive"
+              />
+            </div>
+            <h2
+              class="title small"
+              style="text-align:center; padding-top: 10px;"
+            >
+              Capture
+            </h2>
+            <p class="title-sub" style="text-align:center;">
+              Capture photos in 360
+            </p>
+          </div>
+          <div class="col-md-1 noMobile" data-aos="slide-left">
+            <div
+              class="icon"
+              style="margin-left: 50%;
+								margin-top: 100%;"
+            >
+              <i class="fas fa-angle-right fa-4x"></i>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="slide-right">
+            <div class="icon">
+              <video
+                style="width: 300px; height: 150px; margin: auto; display: block;"
+                class="featureVideo"
+                width="100%"
+                height="100%"
+                autoplay="true"
+                muted=""
+                loop="true"
+              >
+                <source src="../img/feature3.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h2
+              class="title small"
+              style="text-align:center; padding-top: 10px;"
+            >
+              Create
+            </h2>
+            <p class="title-sub" style="text-align:center;">
+              Upload to CloudPano.com and create your tour
+            </p>
+          </div>
+          <div class="col-md-1 noMobile" data-aos="slide-left">
+            <div
+              class="icon"
+              style="margin-left: 50%;
+									margin-top: 100%;"
+            >
+              <i class="fas fa-angle-right fa-4x"></i>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="slide-right">
+            <div class="icon">
+              <img
+                style="object-fit: cover;
+										width: 300px;
+										height: 150px;"
+                src="../img/screenshots\preview1.png"
+                alt="img"
+                class="img-responsive"
+              />
+            </div>
+
+            <h2
+              class="title small"
+              style="text-align:center; padding-top: 10px;"
+            >
+              Publish
+            </h2>
+            <p class="title-sub" style="text-align:center;">
+              Share your tour with the world
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:40px;" class="whatis section" id="whatis">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center" data-aos="slide-right">
+            <img src="../img/iphone8-mockup.png" class="img-responsive" />
+          </div>
+          <div class="col-md-6">
+            <div class="feature-heading" data-aos="fade-up">
+              <h4 class="color">Getting Started</h4>
+            </div>
+            <h1 class="h1 feature" data-aos="fade-up">
+              What is a 360 Virtual Tour?
+            </h1>
+            <p class="feature-text" data-aos="fade-up">
+              A 360 virtual tour on CloudPano is a real estate marketing tool to
+              view and share a space in an immersive 360 environment. With a
+              smartphone, the CloudPano viewer responds to your movement. This
+              creates a responsive and immersive view of the property. Create
+              your first 360 virtual tour in 5 minutes or less.
+            </p>
+            <div class="what-btn-wrapper">
+              <a href="http://app.cloudpano.com" class="featureButton">
+                Get Started</a
+              >
+              <a href="#screenshots" class="featureButton light">
+                View 360° Examples</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Begin Embedded Feature -->
+    <section class="section feature" id="embedded-feature">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center feature-heading">
+              <h1 class="h1 feature aos-init aos-animate" data-aos="fade-up">
+                Add or Embed 360 Virtual Tours On Any Website
+              </h1>
+              <h4 class="color aos-init aos-animate" data-aos="fade-up">
+                (No App or Plugin Required)
+              </h4>
+              <p
+                class="feature-text aos-init aos-animate"
+                data-aos="fade-up"
+                style="margin: 30px auto;width: 50%;"
+              >
+                When you publish a 360 virtual tour on CloudPano.com, you will
+                automatically receive a code based link. You can embed your tour
+                right onto your website. <br />We host the tour, you show it off
+                to the world.
+              </p>
+              <h4 class="color aos-init aos-animate">Here Is A Live Example</h4>
+              <br />
+              <!--<iframe allowfullscreen frameborder="0" width="100%" height="500" src="https://app.cloudpano.com/tours/859R893XXY"></iframe>-->
+              <div id="embedTourContainer" style="padding:unset; margin:unset;"><iframe
+                id="embedTour"
+				style="pointer-events: none;"
+                allowfullscreen
+                allow="vr;accelerometer;gyroscope;fullscreen;xr;"
+                frameborder="0"
+                width="100%"
+                height="500"
+                scrolling="no"
+                src="https://app.cloudpano.com/tours/lTygoP3H1C"
+              ></iframe>
+              <!-- <script>
+              //try to disable scroll events sent to iframe...
+              document.addEventListener("DOMContentLoaded", function(event) { 
+                var el = document.getElementById('embedTourContainer');
+               el.addEventListener("scroll", function(e){
+                  e.preventDefault();
+                  e.stopPropagation();
+                  return false;}, false);
+                  document.getElementById('embedTour').
+               el.addEventListener("touchmove", function(e){
+                  e.preventDefault();
+                  e.stopPropagation();
+                  return false;}, false);
+                  document.getElementById('embedTour').
+               el.addEventListener("mousewheel", function(e){
+                  e.preventDefault();
+                  e.stopPropagation();
+                  return false;}, false);  //do work
+});
+
+</script> -->
+</div>
+            </div>
+            <!-- end col -->
+          </div>
+        </div>
+      </section>
+      <!-- End Embedded Feature -->
+
+      <section
+      id="screenshots"
+      class="section bg-light"
+      style="padding-top:40px;"
+    >
+      <a id="screenshotsAnchor" class="anchor"></a>
+      <!-- screenshot heading -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <div class="title-box-icon" data-aos="fade-up">
+              <i class="fa fa-rocket fa-4x"></i>
+              <h3 class="title">CloudPano 360 Virtual Tour Examples</h3>
+              <p class="text-muted sub-title">
+                Explore some of our featured 360 tours from the CloudPano
+                community
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end screenshot heading -->
+      <div class="container">
+        <div class="slider" data-aos="zoom-in">
+          <div class="slider-content">
+            <a href="https://app.cloudpano.com/tours/F_bT4A587K" target="_blank"
+              ><img
+                src="../img/screenshots/preview-fl.png"
+                alt=""
+                class="img-responsive"
+              />
+              <p class="previewText text-muted sub-title">
+                Florida Luxury 360 Virtual Tour <br />
+                Click to view this demo
+              </p></a
+            >
+          </div>
+          <div class="slider-content">
+            <a href="https://app.cloudpano.com/tours/IfLUP2LTpy" target="_blank"
+              ><img
+                src="../img/screenshots/preview-ny.png"
+                alt=""
+                class="img-responsive"
+              />
+              <p class="previewText text-muted sub-title">
+                New York VR Nursing Home <br />
+                Click to view this demo
+              </p></a
+            >
+          </div>
+          <div class="slider-content">
+            <a href="https://app.cloudpano.com/tours/HnwX1BwRCO" target="_blank"
+              ><img
+                src="../img/screenshots/preview-ca.png"
+                alt=""
+                class="img-responsive"
+              />
+              <p class="previewText text-muted sub-title">
+                California Million Dollar Home <br />
+                Click to view this demo
+              </p></a
+            >
+          </div>
+        </div>
+        <div class="slider" data-aos="zoom-in">
+          <div class="slider-content">
+            <a href="https://app.cloudpano.com/tours/t1LtFvj5DK" target="_blank"
+              ><img
+                src="../img/screenshots/preview1.png"
+                alt=""
+                class="img-responsive"
+              />
+              <p class="previewText text-muted sub-title">
+                Luxury Residential <br />
+                Click to view this demo
+              </p></a
+            >
+          </div>
+          <div class="slider-content">
+            <a href="https://app.cloudpano.com/tours/859R893XXY" target="_blank"
+              ><img
+                src="../img/screenshots/preview2.png"
+                alt=""
+                class="img-responsive"
+              />
+              <p class="previewText text-muted sub-title">
+                AirBnB Rental <br />
+                Click to view this demo
+              </p></a
+            >
+          </div>
+          <div class="slider-content">
+            <a href="https://app.cloudpano.com/tours/zxTFwczny0" target="_blank"
+              ><img
+                src="../img/screenshots/preview3.png"
+                alt=""
+                class="img-responsive"
+              />
+              <p class="previewText text-muted sub-title">
+                Commercial Construction <br />
+                Click to view this demo
+              </p></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end screenshot -->
+
+    <!-- Begin Feature 1 -->
+    <section class="section feature" id="feature1" style="padding-top: 40px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="feature-heading" data-aos="fade-up">
+              <h4 class="color">Simple 3D Tour Creation</h4>
+            </div>
+            <h1 class="h1 feature" data-aos="fade-up">
+              Create your first tour in under five minutes.
+            </h1>
+            <p class="feature-text" data-aos="fade-up">
+              Upload photos using a drag-and-drop interface. Click a single
+              button to set an initial view for each scene. Add hotspots to
+              navigate your tour.
+            </p>
+            <h4 class="ttu" data-aos="fade-in">Popular Features</h4>
+            <ul class="features-list" data-aos="fade-in">
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Hotspots
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Customize your logo
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Set initial view
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Re-order scenes
+              </li>
+            </ul>
+            <a href="http://app.cloudpano.com" class="featureButton">
+              Get Started - Click Here ></a
+            >
+          </div>
+          <!-- end col -->
+          <div class="col-md-6 text-center">
+            <video
+              class="featureVideo"
+              width="650px"
+              height="100%"
+              autoplay="true"
+              muted=""
+              loop="true">
+            
+              <source src="../img/feature1.mp4" type="video/mp4" />
+            </video>            
+            
+            <!--<iframe
+              src="https://player.vimeo.com/video/333632559?autoplay=1&loop=1&autopause=0&muted=1"
+              allow="autoplay; fullscreen"
+              width="640"
+              height="360"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+            ></iframe>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Feature 1 -->
+    <!-- Begin Feature 2 -->
+    <section class="section feature" id="feature2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center" data-aos="slide-right">
+            <div
+              id="phoneFeature2"
+              class="device-wrapper"
+              style="width:250px; display:inline-block;"
+            >
+              <div
+                class="device"
+                data-device="iPhone7"
+                data-orientation="portrait"
+                data-color="black"
+              >
+                <div id="screen1" class="screen">
+                  <!-- PUT CONTENTS HERE -->
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+              </div>
+            </div>
+            <div
+              class="device-wrapper noMobile"
+              style="width:200px;margin-left:-80px; display:inline-block;"
+            >
+              <div
+                class="device"
+                data-device="iPhone7"
+                data-orientation="portrait"
+                data-color="white"
+              >
+                <div id="screen2" class="screen">
+                  <!-- PUT CONTENTS HERE -->
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+              </div>
+            </div>
+            <script>
+              var panorama, viewer;
+              panorama = new PANOLENS.ImagePanorama("img/3.jpg");
+              viewer = new PANOLENS.Viewer({
+                container: document.querySelector("#screen1"),
+                controlBar: false
+              });
+              viewer.add(panorama);
+              viewer.getControl().autoRotateSpeed = 0.1;
+              viewer.getControl().autoRotate = true;
+              viewer.getControl().noZoom = true;
+              var panorama2, viewer2;
+              panorama2 = new PANOLENS.ImagePanorama("img/6.jpg");
+              viewer2 = new PANOLENS.Viewer({
+                container: document.querySelector("#screen2"),
+                controlBar: false
+              });
+              viewer2.add(panorama2);
+              viewer2.getControl().autoRotateSpeed = 0.3;
+              viewer2.getControl().autoRotate = true;
+              viewer2.getControl().noZoom = true;
+            </script>
+          </div>
+          <!-- end col -->
+          <div class="col-md-6">
+            <div class="feature-heading">
+              <h4 class="color" data-aos="fade-up">Share In Full 360 and VR</h4>
+            </div>
+            <h1 class="h1 feature" data-aos="fade-up">
+              Share and display on any smart device out of the box -
+              <u>no app required</u>
+            </h1>
+            <p class="feature-text" data-aos="fade-up">
+              Give meaningful experiences to your viewers. Built-in motion
+              sensing capabilities and VR-goggle modes work right in the mobile
+              browser. Reach your customer on any platform. Simply share your
+              virtual tour with a single URL link.
+            </p>
+            <h4 class="ttu" data-aos="fade-in">Popular Features</h4>
+            <ul class="features-list" data-aos="fade-in">
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Android/iOS
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Google Cardboard
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> No app to download
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> VR/Motion Navigation
+              </li>
+            </ul>
+            <a href="http://app.cloudpano.com" class="featureButton">
+              Get Started - Click Here ></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- End Feature 2 -->
+
+
+
+    <!-- Testimonial 2 -->
+
+    <!-- Testimonial 2 End Here -->
+
+    <!-- Begin Feature 3 -->
+    <section class="section feature" id="feature3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="feature-heading" data-aos="fade-up">
+              <h4 class="color">Customize Your Tour Branding</h4>
+            </div>
+            <h1 class="h1 feature" data-aos="fade-up">
+              Add logos, hotspot navigation and more
+            </h1>
+            <p class="feature-text" data-aos="fade-up">
+              Use linked hotspots to teleport between scenes. Add your logo and
+              establish your brand.
+            </p>
+            <h4 class="ttu">Popular Features</h4>
+            <ul class="features-list" data-aos="fade-in">
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Customize Your Logo
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Contact Information
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Share on social media
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Keep Your Custom URL
+              </li>
+            </ul>
+            <a href="http://app.cloudpano.com" class="featureButton">
+              Get Started - Click Here ></a
+            >
+          </div>
+          <!-- end col -->
+          <div class="col-md-6 text-center" data-aos="slide-left">
+            <video
+              class="featureVideo"
+              width="700px"
+              height="100%"
+              autoplay="true"
+              muted=""
+              loop="true"
+            >
+              <source src="../img/feature3.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Feature 3 -->
+
+    <!-- Testimonial Tony -->    
+    
+
+
+
+    <!-- Testimonial Tony End Here -->
+
+    <!-- Begin Feature 4 -->
+    <section class="section feature" id="feature4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center" data-aos="slide-right">
+            <video
+              class="featureVideoOffset previewMajor"
+              width="120%"
+              height="120%"
+              autoplay="true"
+              muted=""
+              loop="true"
+            >
+              <source src="../img/feature4.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <!-- end col -->
+          <div class="col-md-6">
+            <div class="feature-heading">
+              <h4 class="color" data-aos="fade-up">
+                White-label your virtual tour
+              </h4>
+            </div>
+            <h1 class="h1 feature" data-aos="fade-up">
+              Use your own website domain
+            </h1>
+            <p class="feature-text" data-aos="fade-up">
+              Remove all references of CloudPano.com. Use your own logo and keep
+              your website domain. Easily use your own URL. Add 360 virtual
+              tours into your business and
+              <b> keep our name hidden. </b>
+            </p>
+            <h4 class="ttu" data-aos="fade-in">Popular Features</h4>
+            <ul class="features-list" data-aos="fade-in">
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Customize Your URL
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Customize Your Logo
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Remove CloudPano Branding
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Low-cost
+              </li>
+            </ul>
+            <a href="http://app.cloudpano.com" class="featureButton">
+              Get Started - Click Here >
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Feature 4 -->
+    <!-- Begin software-toolkit -->
+    <section
+      id="software-toolkit"
+      class="section bg-light"
+      style="padding-top:40px;"
+    >
+      <a id="screenshotsAnchor" class="anchor"></a>
+      <!-- heading -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <div class="title-box-icon" data-aos="fade-up">
+              <h1 class="h1 feature aos-init aos-animate" data-aos="fade-up">
+                The Perfect Software Toolkit For Virtual Tour Entrepreneurs
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end heading -->
+      <div class="container" style="padding-top: 40px;">
+        <div
+          class="row text-center soft-tool-subheading"
+          style="padding: 20px 0 50px;"
+        >
+          <div class="col-md-12">
+            <h4 class="ttu aos-init aos-animate" data-aos="slide-right">
+              Start a Local 360 Virtual Tour Business
+            </h4>
+            <h4 class="ttu aos-init aos-animate" data-aos="slide-up">or</h4>
+            <h4 class="ttu aos-init aos-animate" data-aos="slide-left">
+              Add Virtual Reality Marketing To Current Business
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12" data-aos="slide-right">
+            <img src="../img/software-toolkit-img.jpg" />
+          </div>
+          <div class="col-md-6 col-sm-12" style="padding-top: 10px;">
+            <h4 class="ttu aos-init aos-animate" data-aos="fade-up">
+              A Simple Software Solution To Power Your Virtual Tour Revenue
+            </h4>
+            <ul class="features-list aos-init aos-animate" data-aos="fade-up">
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Private Label / White Label -
+                Keep Your Website Domain Name and Protect Your Brand
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Add or Embed Your Published
+                360 Virtual Tours Directly To Your Website or Blog (Wordpress
+                Compatible)
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> Present Your 360 Tours In A
+                Virtual Reality Headset
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check green"></i> International Hosting On
+                Local Server Networks (Speed Guaranteed)
+              </li>
+            </ul>
+            <p class="feature-text aos-init aos-animate" data-aos="fade-up">
+              CloudPano.com is a Virtual Tour Software built for entrepreneurs,
+              photographers and real estate brokers. You will be empowered to
+              create world class 360/VR virtual tours quickly, market real
+              estate at a high level <strong>AND</strong> keep your brand on the
+              front of tour. If you are looking for a 360 virtual tour software
+              built for the business owner - you are in the right place.
+            </p>
+            <a href="http://app.cloudpano.com" class="featureButton">
+              Get Started - Click Here &gt;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End software-toolkit -->
+    <!-- pricing -->
+    <section id="pricing" class="section" style="padding-top: 80px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="text-center">
+              <div class="title-box-icon" data-aos="fade-up">
+                <i class="fa fa-cubes fa-4x"></i>
+                <h3 class="title">Simple Pricing</h3>
+                <p class="text-muted sub-title">
+                  Build a 360 virtual tour for free. Make the tour your own for
+                  a few dollars. One time fee, hosted tour for life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <!--col-lg-offset-1-->
+            <div class="row">
+              <!--Pricing Column-->
+              <article
+                class="pricing-column col-lg-4 col-md-4"
+                data-aos="flip-right"
+              >
+                <div class="inner-box active">
+                  <div class="plan-header text-center">
+                    <h3 class="plan-title">Free</h3>
+                    <h2 class="plan-price">$0</h2>
+                    <div class="plan-duration">
+                      Per Tour
+                      <br />
+                      <i>Expires in 120 days</i>
+                    </div>
+                  </div>
+                  <ul class="plan-stats list-unstyled">
+                    <li>
+                      <i class="far fa-check-square"></i>Unlimited 360 Photos
+                    </li>
+                    <li><i class="far fa-check-square"></i>Share Anywhere</li>
+                    <li>
+                      <i class="far fa-check-square"></i>Gyroscope-enabled
+                      Motion Control
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>Add Branding and Logo
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>Hotspots and Infospots
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>Three Free Tour Limit
+                    </li>
+                    <li></li>
+                  </ul>
+                  <div class="text-center">
+                    <a
+                      href="https://app.cloudpano.com"
+                      class="btn btn-sm btn-custom"
+                      >Get Started Here</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <!--Pricing Column-->
+              <article
+                class="pricing-column col-lg-4 col-md-4"
+                data-aos="zoom-out"
+              >
+                <div class="inner-box active">
+                  <div class="plan-header text-center">
+                    <h3 class="plan-title">Pro</h3>
+                    <h2 class="plan-price">$10</h2>
+                    <div class="plan-duration">
+                      Per Tour
+                      <br />
+                      <i>Never expires</i>
+                    </div>
+                  </div>
+                  <ul class="plan-stats list-unstyled">
+                    <li>
+                      <i class="far fa-check-square"></i>
+                      <b>Remove "Made by CloudPano" watermark</b>
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>
+                      <b>Enable MLS Compliance</b>
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>
+                      <b>Embed On Your Website</b>
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>Unlimited 360 Photos
+                    </li>
+                    <li><i class="far fa-check-square"></i>Share Anywhere</li>
+                    <li>
+                      <i class="far fa-check-square"></i>Gyroscope-enabled
+                      Motion Control
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>Add Branding and Logo
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>Hotspots and Infospots
+                    </li>
+                  </ul>
+                  <div class="text-center">
+                    <a
+                      href="https://app.cloudpano.com"
+                      class="btn btn-sm btn-custom"
+                      >Get Started Here</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <!--Pricing Column-->
+              <article
+                class="pricing-column col-lg-4 col-md-4"
+                data-aos="flip-right"
+              >
+                <div class="inner-box active">
+                  <div class="plan-header text-center">
+                    <h3 class="plan-title">Pro Plus</h3>
+                    <h2 class="plan-price">$33</h2>
+                    <div class="plan-duration">
+                      Per Month - Paid Annually
+                    </div>
+                    <div class="plan-subscribe">
+                      <a href="https://www.cloudpano.com/add-to-cart/">
+                        Learn More
+                      </a>
+                    </div>
+                  </div>
+                  <ul class="plan-stats list-unstyled">
+                    <li>
+                      <i class="far fa-check-square"></i
+                      ><b
+                        >Complete access to CloudPano's award-winning 360 tour
+                        creator</b
+                      >
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i><b>Unlimited tours</b>
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i
+                      ><b>Life-time tours - no expiration</b>
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i
+                      ><b>White-label/Bring your own URL</b>
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i
+                      ><b>4K/High-def premium photo uploads</b>
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i><b>Google Analytics</b>
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i
+                      ><b>360 Provider Directory Listing</b>
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i
+                      ><b>Embed HTML and Media</b>
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>MLS-Compliant Tour
+                      Cloning
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>Ambient Sounds and
+                      Music
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>Tour Privacy Settings
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>Lead Capture Tool
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>Trainings and
+                      curriculum
+                    </li>
+                    <li>
+                      <i class="far fa-check-square"></i>10% discount on
+                      Insta360 products
+                    </li>
+                  </ul>
+                  <div class="text-center">
+                    <a href="/add-to-cart" class="btn btn-sm btn-custom"
+                      >Create Pro Plus Account</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- End Pricing -->
+    <!-- clients -->
+    <section id="clients" class="section">
+      <!-- CLIENTS HEADING -->
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1>CloudPano Pro User Testimonials</h1>
+          <p class="text-muted sub-title">
+            <!--We might be biased, but we think our software is pretty great. Our customers think so too.-->&nbsp
+          </p>
+        </div>
+      </div>
+      <!-- end row -->
+      <!-- END CLIENTS HEADING -->
+      <!-- <div class="container">
+					<div class="slider" data-aos="zoom-out">
+						<div class="clients-content">
+							<a href="#"><img src="img/support/logo1.png" alt=""></a>
+						</div>
+						<div class="clients-content">
+							<a href="#"> <img src="img/support/logo2.png" alt=""></a>
+						</div>
+						<div class="clients-content">
+							<a href="#"> <img src="img/support/logo3.png" alt=""></a>
+						</div>
+					</div>
+				</div> -->
+      <!-- testimonials -->
+      <div id="testimonials" class="testimonials-main">
+        <div class="container" data-aos="zoom-in">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="testimonial-card">
+                <h4>
+                  The technology is pretty amazing and the finished 3D tour is
+                  high definition. The tours played well on everything from a
+                  desktop to a cellphone. Highly recommended.
+                </h4>
+                <img
+                  width="80"
+                  height="80"
+                  src="../img/testimonials/testimonial_1.jpg"
+                  alt="team"
+                />
+                <span><b>Donald Pierce - Realtor</b> <br />Houston Texas</span>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="testimonial-card">
+                <h4>
+                  I just pitched a $2.5 Million dollar FSBO with the VR headset
+                  and CloudPano software. I impressed the client, built rapport
+                  and added value with the VR presentation. It's marketing like
+                  that this that makes you stick out amongst your competition...
+                  and ultimately this moves property at a high level.
+                </h4>
+                <img
+                  width="80"
+                  height="80"
+                  src="../img/testimonials/testimonial_2.jpg"
+                  alt="team"
+                />
+                <span
+                  ><b>Carmello Pronesti</b> <br />
+                  Palm Harbor, Florida</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="testimonial-card">
+                <h4>
+                  This technology changes the game. My customers are very
+                  excited about it. And I know when my customers are excited
+                  about it, I am going to make some more money.
+                </h4>
+                <img
+                  width="80"
+                  height="80"
+                  src="../img/testimonials/testimonial_3.jpg"
+                  alt="team"
+                />
+                <span
+                  ><b>Mark Mckinney - Real Estate Photographer</b> <br />
+                  River Oak Media Fort Worth Texas
+                </span>
+              </div>
+              </div></div> <div style="padding-top:10px;" class="row">
+                      <div class="col-lg-4">
+                  <div class="testimonial-card">
+                    <h4>
+                        "360 tours are an easy way to upsell my clients on location.
+                          Plus, it only takes a few minutes to create a virtual tour on
+                          CloudPano.com."
+                    </h4>
+                    <img
+                      width="80"
+                      height="80"
+                      src="../img/brian.png"
+                      alt="team"
+                    />
+                    <span><b>Brian Berkowitz</b> <br />Shooting Spaces Podcast</span>
+                </div>
+              </div>
+              <div class="col-lg-4">
+              <div class="testimonial-card">
+                  <h4>
+                      "CloudPano has a crisp and clean design.
+                      Plus the platform hosts the 360 virtual tours for me, so I can
+                      create tours quickly and get back to shooting."
+                  </h4>
+                  <img
+                    width="80"
+                    height="80"
+                    src="../img/tony.png"
+                    alt="team"
+                  />
+                  <span><b>Tony Thagard - Photographer</b> <br />Gulf Coast, Alabama (Florida)</span>
+              </div>
+              </div>
+              <!-- here -->
+<!-- here -->
+<div class="col-lg-4"><div class="testimonial-card">
+          <h4>
+              "Being able to have a full 360 tour of my listings and show
+              sellers how I can take marketing of their home to the next level
+              is HUGE! I appreciate you and your team helping me out along the
+              way answering any and all questions that I have had so far and I
+              am excited to continue to implement and grow my business with the
+              help of you and your team."
+          </h4>
+          <img
+            width="80"
+            height="80"
+            src="../img/logan.jpg"
+            alt="team"
+          />
+          <span><b>Logan Odom</b> <br />Medford, Oregon</span>
+      </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end clients -->
+
+    <!-- start qa -->
+    <section id="qa" class="qa-main">
+      <div class="container" data-aos="zoom-in">
+        <div class="row">
+          <div class="col-lg-12 qa-hdr">
+            <h1>Common Questions</h1>
+          </div>
+          <div class="col-lg-4 lst1">
+            <div class="qa-cont">
+              <img src="../img/CloudPano_qa.png" />
+              <div class="qa-tt">
+                <p>How many virtual tours can I create with a Pro Plus plan?</p>
+              </div>
+              <div class="qa-dsc">
+                <p>Unlimited</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 lst2">
+            <div class="qa-cont">
+              <img src="i../mg/CloudPano_qa.png" />
+              <div class="qa-tt">
+                <p>
+                  What type of photos do I need to create a 360 tour on
+                  CloudPano?
+                </p>
+              </div>
+              <div class="qa-dsc">
+                <p>CloudPano requires 360 photos with a 2:1 aspect ratio.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 lst3">
+            <div class="qa-cont">
+              <img src="../img/CloudPano_qa.png" />
+              <div class="qa-tt">
+                <p>
+                  What type of camera do I need to capture a 360 photo for a 360
+                  tour?
+                </p>
+              </div>
+              <div class="qa-dsc">
+                <p>
+                  We recommend a single shot 360 camera. Most 360 cameras work
+                  well and output the required 360 photo. CloudPano is
+                  compatible with any 360 photo output.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <div class="col-lg-4 lst4">
+            <div class="qa-cont">
+              <img src="../img/CloudPano_qa.png" />
+              <div class="qa-tt">
+                <p>How many photos are needed to create a 360 virtual tour?</p>
+              </div>
+              <div class="qa-dsc">
+                <p>You only need one photo to get started.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 lst5">
+            <div class="qa-cont">
+              <img src="../img/CloudPano_qa.png" />
+              <div class="qa-tt">
+                <p>Can we share CloudPano tours on the MLS?</p>
+              </div>
+              <div class="qa-dsc">
+                <p>
+                  <small
+                    >Yes, you can customize CloudPano virtual tours to show, or
+                    remove, branding based on your MLS requirements.</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 lst6">
+            <div class="qa-cont">
+              <img src="../img/CloudPano_qa.png" />
+              <div class="qa-tt">
+                <p>Can I share these virtual tours in a VR headset?</p>
+              </div>
+              <div class="qa-dsc">
+                <p>
+                  Yes, every 360 tour created with CloudPano has the option to
+                  be viewed in VR mode.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end qa -->
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="title-box-icon" data-aos="fade-up">
+          <i class="fa fa-envelope-o fa-4x"></i>
+          <h1>Contact us</h1>
+          <p class="title-sub mini">
+            We are passionate about changing the world through software.
+            <br />Call us or email us anytime.
+          </p>
+        </div>
+      </div>
+      <div class="container contact-info" data-aos="zoom-out">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="icon"><i class="fas fa-map-marker white"></i></div>
+            <h2 class="title small">Address</h2>
+            <p class="title-sub">
+              1301 Fannin St #2440<br />
+              Houston, TX 77002
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="icon"><i class="fas fa-phone white"></i></div>
+            <h2 class="title small">Call us at</h2>
+            <p class="title-sub">1-281-783-9403</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="icon"><i class="fas fa-envelope-open white"></i></div>
+            <h2 class="title small">Email us at</h2>
+            <p class="title-sub">
+              <a href="mailto:zach@cloudpano.com">zach@cloudpano.com</a><br /><a
+                href="mailto:clayton@cloudpano.com"
+                >clayton@cloudpano.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- / container -->
+      <div id="overlay" class="map">
+        <iframe
+          id="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.838937355015!2d-95.36792898493752!3d29.753374181989216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bf3c5ae93b1d%3A0x574cf28ef3b62658!2s1301+Fannin+St%2C+Houston%2C+TX+77002!5e0!3m2!1sen!2sus!4v1540950266708"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <!-- /contact-section -->
+    <!-- / container -->
+    <!-- FOOTER -->
+    <footer class="section footer">
+      <div class="container" data-aos="fade-up-down">
+        <!-- Navbar -->
+        <div class="row">
+          <!-- Navbar-header -->
+          <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+            <!-- LOGO -->
+            <a class="logo" href="index.html">
+              <img
+                src="../img/logo.png"
+                alt="logo"
+                class="navbar-brand img-responsive"
+              />
+              <p style="line-height: 50px; display: inline-block;">CloudPano</p>
+            </a>
+          </div>
+          <!-- end navbar-header -->
+          <div
+            class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center"
+            id="footer1"
+          >
+            <ul>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#clients" class="nav-link">Customers</a></li>
+              <li><a href="#feature1" class="nav-link">Features</a></li>
+              <li><a href="#pricing" class="nav-link">Price</a></li>
+              <li><a href="/team" class="nav-link">Team</a></li>
+              <li><a href="http://blog.cloudpano.com">Blog</a></li>
+              <li><a href="/contact" class="nav-link">Contact</a></li>
+              <li>
+                <a href="/tour-hosting" class="nav-link"
+                  >Tour Hosting Details</a
+                >
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3" id="footer2">
+            <ul>
+              <li><a class="nav-link">Address:</a></li>
+              <li><a class="nav-link">1301 Fannin St #2440</a></li>
+              <li><a class="nav-link">Houston, TX 77002</a></li>
+              <br />
+              <li><a class="nav-link">Email:</a></li>
+              <li>
+                <a href="mailto:zach@cloudpano.com" class="nav-link"
+                  >zach@cloudpano.com</a
+                >
+              </li>
+              <li>
+                <a href="mailto:clayton@cloudpano.com" class="nav-link"
+                  >clayton@cloudpano.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3" id="fa_iscons">
+            <div class="social-buttons">
+              <a
+                href="https://www.facebook.com/CloudPanocom-1794165787366692/"
+                target="_blank"
+                ><img height="40px" width="40px" src="../img/facebook.svg"
+              /></a>
+              <!--<a href="http://twitter.com"><img height="40px" width="40px" src="./img/twitter.svg"/></a> -->
+              <a
+                href="https://www.linkedin.com/company/cloudpano-com/"
+                target="_blank"
+                ><img height="40px" width="40px" src="../img/linkedin.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- End navbar-custom -->
+        <div class="lower-footer">
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="footer-alt text-left">
+                <p class="text-muted m-b-0 h4">
+                  © CloudPano.com, All rights reserved
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2">
+              <div class="footer-alt text-right">
+                <a href="/help"
+                  ><p class="text-muted m-b-0 h4">Help and Support</p></a
+                >
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="footer-alt text-right">
+                <a
+                  href="https://docs.google.com/document/d/e/2PACX-1vSnQP1Hss74M_5zC6id_PgjUvBslUDYX8lphuxQngoyojkAkhj9s_c_f2R3OWkV6aSd_cTlGJHrNZIo/pub"
+                  ><p class="text-muted m-b-0 h4">Terms of Service</p></a
+                >
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="footer-alt text-right">
+                <a
+                  href="https://docs.google.com/document/d/e/2PACX-1vQsA_vntjttu1c8A0k3vZ4VQEtm6gMGuCuqhtcPvMa2xDzWB8q1yUtM4HRAyQnNaAR2AgOi6oiM2L3t/pub"
+                  ><p class="text-muted m-b-0 h4">Privacy Policy</p></a
+                >
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="footer-alt text-right">
+                <a
+                  href="https://www.cloudpano.com/license.txt"
+                  ><p class="text-muted m-b-0 h4">Software License</p></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+      </div>
+      <!-- end container -->
+    </footer>
+	
+    <!-- END FOOTER -->
+    <!-- jQuery -->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Jquery easing -->
+    <script type="text/javascript" src="../js/jquery.easing.1.3.min.js"></script>
+    <!--sticky header-->
+    <script type="text/javascript" src="../js/jquery.sticky.js"></script>
+    <!-- OWL Carousel -->
+    <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+    <!--Magnific popup-->
+    <script
+      type="text/javascript"
+      src="../js/jquery.magnific-popup.min.js"
+    ></script>
+    <!-- contact form -->
+    <script type="text/javascript" src="../js/jqBootstrapValidation.js"></script>
+    <!-- Typedjs -->
+    <script type="text/javascript" src="../js/typed.min.js"></script>
+    <!-- Aos Animation -->
+    <script type="text/javascript" src="../js/aos.js"></script>
+    <!--common script for all pages-->
+    <script src="../js/custom.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-124568578-1"
+    ></script>
+	<script type="text/javascript">
+		$('#openDesc').on('click', function(event) {
+			event.preventDefault();
+			$('#target-description').show(500);
+		})					
+	</script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-124568578-1");
+    </script>
+    <!-- Begin Inspectlet Asynchronous Code -->
+    <script type="text/javascript">
+      (function() {
+        window.__insp = window.__insp || [];
+        __insp.push(["wid", 709060149]);
+        var ldinsp = function() {
+          if (typeof window.__inspld != "undefined") return;
+          window.__inspld = 1;
+          var insp = document.createElement("script");
+          insp.type = "text/javascript";
+          insp.async = true;
+          insp.id = "inspsync";
+          insp.src =
+            ("https:" == document.location.protocol ? "https" : "http") +
+            "://cdn.inspectlet.com/inspectlet.js?wid=709060149&r=" +
+            Math.floor(new Date().getTime() / 3600000);
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(insp, x);
+        };
+        setTimeout(ldinsp, 0);
+      })();
+    </script>
+    <!-- End Inspectlet Asynchronous Code -->
+
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict";
+
+      !(function() {
+        var t = (window.driftt = window.drift = window.driftt || []);
+        if (!t.init) {
+          if (t.invoked)
+            return void (
+              window.console &&
+              console.error &&
+              console.error("Drift snippet included twice.")
+            );
+          (t.invoked = !0),
+            (t.methods = [
+              "identify",
+              "config",
+              "track",
+              "reset",
+              "debug",
+              "show",
+              "ping",
+              "page",
+              "hide",
+              "off",
+              "on"
+            ]),
+            (t.factory = function(e) {
+              return function() {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }),
+            t.methods.forEach(function(e) {
+              t[e] = t.factory(e);
+            }),
+            (t.load = function(t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement("script");
+              (o.type = "text/javascript"),
+                (o.async = !0),
+                (o.crossorigin = "anonymous"),
+                (o.src =
+                  "https://js.driftt.com/include/" + n + "/" + t + ".js");
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            });
+        }
+      })();
+      drift.SNIPPET_VERSION = "0.3.1";
+      drift.load("87z54e34be4z");
+    </script>
+    <!-- End of Async Drift Code -->
+<!--
+    <script
+      src="https://my.hellobar.com/7f6b6c15978c3eb0da1c009446b0400ab94c0abb.js"
+      type="text/javascript"
+      charset="utf-8"
+      async="async"
+    ></script> -->
+<div style="width:100%;">
+  <div style="text-align: center; display:inline-block;">
+    <form method="POST" action="https://zachcalhoun.activehosted.com/proc.php" id="_form_33_" class="email-sign _form _form_33 _inline-form _inline-style _dark" novalidate>
+      <input type="hidden" name="u" value="33" />
+      <input type="hidden" name="f" value="33" />
+      <input type="hidden" name="s" />
+      <input type="hidden" name="c" value="0" />
+      <input type="hidden" name="m" value="0" />
+      <input type="hidden" name="act" value="sub" />
+      <input type="hidden" name="v" value="2" />
+      <div class="_form-content">
+        <div class="_form_element _x03484875 _inline-style " >
+          <label class="_form-label">
+            Free Guide: How to price 360 tours to generate your next $20,000
+          </label>        
+        </div>
+        <div class="_button-wrapper _inline-style">
+      <div class="_field-wrapper">
+            <input id="_email-field" type="text" name="email" value="Type your email" required/>
+          </div>
+          <button id="_form_33_submit" class="_submit" type="submit">
+            Send It To Me!
+          </button>
+        </div>
+        <div style="position: absolute; right: 20px; top: 10%;"><a id="ecClose" class="ec-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div></a>
+        <div class="_clear-element">
+        </div>
+      </div>
+      <div class="_form-thank-you" style="display:none;">
+      </div>
+    </form>
+  </div>  
+</div>
+
+  </body>
+</html>
