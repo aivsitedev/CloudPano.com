@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Easy-to-use 360 Tour Creation Software."
+    />
+    <meta name="author" content="BigHero" />
+    <title>CloudPano - Tour Creator Software</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Device Mockups -->
+    <link rel="stylesheet" type="text/css" href="js/device-mockups.min.css" />
+    <!-- Font Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Aos Animation -->
+    <link rel="stylesheet" href="css/aos.css" />
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/three.min.js"></script>
+    <script src="js/panolens.min.js"></script>
+    <script src="js/ouibounce.min.js"></script>
+
+    <!-- Color style -->
+    <link href="css/colors/dodger-blue.css" rel="stylesheet" id="color-opt" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicon  -->
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar-menu" class="error-page" id="darya">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar navbar-custom sticky" role="navigation" id="sticky-nav">
+      <div class="container">
+        <!-- Navbar-header -->
+        <div class="navbar-header">
+          <!-- Responsive menu button -->
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->
+          <a class="logo" href="index.html">
+            <img
+              src="img/logo.png"
+              alt="logo"
+              class="navbar-brand img-responsive"
+            />
+            <p style="line-height: 50px; display: inline-block;">CloudPano</p>
+          </a>
+        </div>
+        <!-- end navbar-header -->
+        <!-- menu -->
+        <div class="navbar-collapse collapse" id="navbar-menu">
+          <!-- Navbar left -->
+          <ul class="nav navbar-nav nav-custom-left">
+            <!-- <li>
+              <a href="/features" class="nav-link">Features</a>
+            </li> -->
+            <li>
+                <a href="#screenshots" class="nav-link">Demos</a>
+              </li>
+            <li>
+              <a href="/getting-started" class="nav-link">New to 360?</a>
+            </li>
+            <li>
+              <a href="/team" class="nav-link">Team</a>
+            </li>
+            <li>
+              <a href="/contact" class="nav-link">Contact</a>
+            </li>
+            <li>
+              <a href="/add-to-cart" class="nav-link">Features - Go Pro Plus</a>
+            </li>
+            <!-- <li>
+						<a href="tour-hosting" class="nav-link">Tour Hosting Details</a>
+					</li> -->
+          </ul>
+          <!-- Navbar right -->
+          <div class="nav navbar-nav navbar-right hidden-sm">
+            <a href="http://app.cloudpano.com" class="btn btn-white-bordered">
+              Get Started - Sign In
+            </a>
+            <a href="https://www.cloudpano.com/add-to-cart/" class="btn btn-green-bordered">
+              Upgrade
+            </a>
+          </div>
+        </div>
+        <!--/Menu -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- End navbar-custom -->
+    <!-- Home -->
+    <section class="bg-custom home-fullscreen home error-block" id="home" >
+      <div class="home-sm" style="" >
+        <div class="container">
+          <div class="row">
+        	<div class="col-md-12">
+        		<div class="error-content">
+        			<h2><strong>404</strong> - Page Not Found</h2>
+        			<p>Since you can’t find what you’re looking for here, 
+        			why not join us on Facebook at Virtual Tour Profit and 
+        			join a community of people growing their 360 business like you.
+        			</p>
+        			<div class="what-btn-wrapper">
+        				<a target="_blank" href="https://www.facebook.com/groups/virtualtourprofit/" class="featureButton">Visit our Facebook page</a>
+        				<a href="index.html" class="featureButton light">Restart at the homepage</a>
+        			</div>
+        		</div>
+        	</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+      </div>
+      <!-- / container -->
+    </section>
+    <!-- /contact-section -->
+    <!-- / container -->
+    <!-- FOOTER -->
+    <footer class="section footer">
+      <div class="container" data-aos="fade-up-down">
+        <!-- Navbar -->
+        <div class="row">
+          <!-- Navbar-header -->
+          <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+            <!-- LOGO -->
+            <a class="logo" href="index.html">
+              <img
+                src="img/logo.png"
+                alt="logo"
+                class="navbar-brand img-responsive"
+              />
+              <p style="line-height: 50px; display: inline-block;">CloudPano</p>
+            </a>
+          </div>
+          <!-- end navbar-header -->
+          <div
+            class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center"
+            id="footer1"
+          >
+            <ul>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#clients" class="nav-link">Customers</a></li>
+              <li><a href="#feature1" class="nav-link">Features</a></li>
+              <li><a href="#pricing" class="nav-link">Price</a></li>
+              <li><a href="/team" class="nav-link">Team</a></li>
+              <li><a href="http://blog.cloudpano.com">Blog</a></li>
+              <li><a href="/contact" class="nav-link">Contact</a></li>
+              <li>
+                <a href="/tour-hosting" class="nav-link"
+                  >Tour Hosting Details</a
+                >
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3" id="footer2">
+            <ul>
+              <li><a class="nav-link">Address:</a></li>
+              <li><a class="nav-link">1301 Fannin St #2440</a></li>
+              <li><a class="nav-link">Houston, TX 77002</a></li>
+              <br />
+              <li><a class="nav-link">Email:</a></li>
+              <li>
+                <a href="mailto:zach@cloudpano.com" class="nav-link"
+                  >zach@cloudpano.com</a
+                >
+              </li>
+              <li>
+                <a href="mailto:clayton@cloudpano.com" class="nav-link"
+                  >clayton@cloudpano.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3" id="fa_iscons">
+            <div class="social-buttons">
+              <a
+                href="https://www.facebook.com/CloudPanocom-1794165787366692/"
+                target="_blank"
+                ><img height="40px" width="40px" src="./img/facebook.svg"
+              /></a>
+              <!--<a href="http://twitter.com"><img height="40px" width="40px" src="./img/twitter.svg"/></a> -->
+              <a
+                href="https://www.linkedin.com/company/cloudpano-com/"
+                target="_blank"
+                ><img height="40px" width="40px" src="./img/linkedin.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- End navbar-custom -->
+        <div class="lower-footer">
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="footer-alt text-left">
+                <p class="text-muted m-b-0 h4">
+                  © CloudPano.com, All rights reserved
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2">
+              <div class="footer-alt text-right">
+                <a href="/help"
+                  ><p class="text-muted m-b-0 h4">Help and Support</p></a
+                >
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="footer-alt text-right">
+                <a
+                  href="https://docs.google.com/document/d/e/2PACX-1vSnQP1Hss74M_5zC6id_PgjUvBslUDYX8lphuxQngoyojkAkhj9s_c_f2R3OWkV6aSd_cTlGJHrNZIo/pub"
+                  ><p class="text-muted m-b-0 h4">Terms of Service</p></a
+                >
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="footer-alt text-right">
+                <a
+                  href="https://docs.google.com/document/d/e/2PACX-1vQsA_vntjttu1c8A0k3vZ4VQEtm6gMGuCuqhtcPvMa2xDzWB8q1yUtM4HRAyQnNaAR2AgOi6oiM2L3t/pub"
+                  ><p class="text-muted m-b-0 h4">Privacy Policy</p></a
+                >
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="footer-alt text-right">
+                <a
+                  href="https://www.cloudpano.com/license.txt"
+                  ><p class="text-muted m-b-0 h4">Software License</p></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+      </div>
+      <!-- end container -->
+    </footer>
+	
+    <!-- END FOOTER -->
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Jquery easing -->
+    <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+    <!--sticky header-->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <!-- OWL Carousel -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!--Magnific popup-->
+    <script
+      type="text/javascript"
+      src="js/jquery.magnific-popup.min.js"
+    ></script>
+    <!-- contact form -->
+    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <!-- Typedjs -->
+    <script type="text/javascript" src="js/typed.min.js"></script>
+    <!-- Aos Animation -->
+    <script type="text/javascript" src="js/aos.js"></script>
+    <!--common script for all pages-->
+    <script src="js/custom.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-124568578-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-124568578-1");
+    </script>
+    <!-- Begin Inspectlet Asynchronous Code -->
+    <script type="text/javascript">
+      (function() {
+        window.__insp = window.__insp || [];
+        __insp.push(["wid", 709060149]);
+        var ldinsp = function() {
+          if (typeof window.__inspld != "undefined") return;
+          window.__inspld = 1;
+          var insp = document.createElement("script");
+          insp.type = "text/javascript";
+          insp.async = true;
+          insp.id = "inspsync";
+          insp.src =
+            ("https:" == document.location.protocol ? "https" : "http") +
+            "://cdn.inspectlet.com/inspectlet.js?wid=709060149&r=" +
+            Math.floor(new Date().getTime() / 3600000);
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(insp, x);
+        };
+        setTimeout(ldinsp, 0);
+      })();
+    </script>
+    <!-- End Inspectlet Asynchronous Code -->
+
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict";
+
+      !(function() {
+        var t = (window.driftt = window.drift = window.driftt || []);
+        if (!t.init) {
+          if (t.invoked)
+            return void (
+              window.console &&
+              console.error &&
+              console.error("Drift snippet included twice.")
+            );
+          (t.invoked = !0),
+            (t.methods = [
+              "identify",
+              "config",
+              "track",
+              "reset",
+              "debug",
+              "show",
+              "ping",
+              "page",
+              "hide",
+              "off",
+              "on"
+            ]),
+            (t.factory = function(e) {
+              return function() {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }),
+            t.methods.forEach(function(e) {
+              t[e] = t.factory(e);
+            }),
+            (t.load = function(t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement("script");
+              (o.type = "text/javascript"),
+                (o.async = !0),
+                (o.crossorigin = "anonymous"),
+                (o.src =
+                  "https://js.driftt.com/include/" + n + "/" + t + ".js");
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            });
+        }
+      })();
+      drift.SNIPPET_VERSION = "0.3.1";
+      drift.load("87z54e34be4z");
+    </script>
+    <!-- End of Async Drift Code -->
+<!--
+    <script
+      src="https://my.hellobar.com/7f6b6c15978c3eb0da1c009446b0400ab94c0abb.js"
+      type="text/javascript"
+      charset="utf-8"
+      async="async"
+    ></script> -->
+<div style="width:100%;">
+  <div style="text-align: center; display:inline-block;">
+    <form method="POST" action="https://zachcalhoun.activehosted.com/proc.php" id="_form_33_" class="email-sign _form _form_33 _inline-form _inline-style _dark" novalidate>
+      <input type="hidden" name="u" value="33" />
+      <input type="hidden" name="f" value="33" />
+      <input type="hidden" name="s" />
+      <input type="hidden" name="c" value="0" />
+      <input type="hidden" name="m" value="0" />
+      <input type="hidden" name="act" value="sub" />
+      <input type="hidden" name="v" value="2" />
+      <div class="_form-content">
+        <div class="_form_element _x03484875 _inline-style " >
+          <label class="_form-label">
+            Free Guide: How to price 360 tours to generate your next $20,000
+          </label>        
+        </div>
+        <div class="_button-wrapper _inline-style">
+      <div class="_field-wrapper">
+            <input id="_email-field" type="text" name="email" value="Type your email" required/>
+          </div>
+          <button id="_form_33_submit" class="_submit" type="submit">
+            Send It To Me!
+          </button>
+        </div>
+        <div style="position: absolute; right: 20px; top: 10%;"><a id="ecClose" class="ec-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div></a>
+        <div class="_clear-element">
+        </div>
+      </div>
+      <div class="_form-thank-you" style="display:none;">
+      </div>
+    </form>
+  </div>  
+</div>
+
+  </body>
+</html>
