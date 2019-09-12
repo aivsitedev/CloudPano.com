@@ -3982,6 +3982,10 @@ cursor: pointer;
     border-bottom: solid 1px #ececec;
 }
 
+.error-content i {
+	color: #2062ef;
+}
+
 .error-page .navbar.navbar-custom.sticky 
 {
 	background:rgb(72, 145, 239);
