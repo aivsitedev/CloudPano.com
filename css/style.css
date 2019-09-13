@@ -3951,6 +3951,48 @@ cursor: pointer;
   padding: 0px 20px!important;
 } 
 
+/*---------- 404 page------------*/
+
+.error-block
+{
+	background-image:none;
+	background:#fff;
+}
+
+.error-content 
+{
+	width: 100%;
+    max-width: 860px;
+    margin: 55px auto;
+}
+.error-content .what-btn-wrapper { margin-top: 35px; }
+
+.error-content h2
+{
+	font-size:36px;
+}
+
+.error-content p {
+    background: #f9f9f9;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 25px 0px;
+    line-height: 25px;
+    padding: 10px;
+    border-bottom: solid 1px #ececec;
+}
+
+.error-content i {
+	color: #2062ef;
+}
+
+.error-page .navbar.navbar-custom.sticky 
+{
+	background:rgb(72, 145, 239);
+}
+
+
+
 /*---------- New-g page styles -------------*/
 .mfp-content .demo-call-form 
 {
