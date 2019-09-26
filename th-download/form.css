@@ -28,7 +28,7 @@
 .form-35-header {
     text-align: center;
     padding: 8px;
-    position: relative;
+    position: relative;    
     width: 600px;
     top: -20px;
     left: -20px;
@@ -39,7 +39,7 @@
 {
     text-align: center;
     margin: 28px 0px 0px 0px;
-    color: #636363;
+    color: #a2a2a2;
 }
 
 .mfp-close-btn-in .mfp-close {
