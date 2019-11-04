@@ -16,13 +16,13 @@ $message = $_POST['message'];
 // Create the email and send the message
 
 // Replace you email with the example bellow.
-$to = 'yourname@yourdomain.com'; 
+$to = support@cloudpano.com'; 
 
 // ----------- ^ ------------
 
 $email_subject = "BigHero Contact Form:  $name";
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\n\nMessage:\n$message";
-$headers = "From: BigHero@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers = "From: support@cloudpano.com\n"; // This is the email address the generated message will be from. We recommend using something like support@cloudpano.com.
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
 return true;			
