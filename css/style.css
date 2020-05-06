@@ -251,7 +251,8 @@ Table of contents
 {  
      margin-left:10px;
      padding: 8px 24px !important;
-     background-color: #72c059!important;
+     background: #3ecf8e;
+     text-shadow: 0 1px 3px rgba(36,180,126,.4);
      border: 2px solid rgb(147, 226, 120) !important;
      color: #ffffff;
      border-radius: 50px;
@@ -259,16 +260,6 @@ Table of contents
      letter-spacing: 0.04em;
      transition: 0.5s all;
 }
-
- .btn-green-bordered:hover {
-     background-color: #ffffff !important;
-     color: #72c059!important;
- }
-
- 
- .btn-white-bordered:hover {
-     background-color: #ffffff !important;
- }
  
  .btn-custom {
      padding: 8px 24px !important;
@@ -294,10 +285,6 @@ Table of contents
      letter-spacing: 0.04em;
      transition: 0.5s all;
      margin-top: 9px;
- }
- 
- .btn-custom:hover {
-     background-color: transparent !important;
  }
  
  .video-btn {
@@ -963,6 +950,16 @@ Table of contents
      z-index: 10;
  }
 
+    
+ .btn-green-bordered:hover, .btn:hover, .owl-item:hover, .common-Button:hover{
+ transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+.btn-green-bordered:active, .btn:active, .owl-item:active, .common-Button:active{
+    transform: translateY(1px);
+    box-shadow: 0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3);
+}
+
  /* ==== 4. About ==== */
  
  #about {
@@ -974,9 +971,10 @@ Table of contents
      padding: 10px 0px 0;
  }
  
+ @media (min-width:1000px){
  .about-story-content {
-     padding: 40px;
- }
+     padding-top: 40px;
+ }}
  
  .about-story img {
      max-height: 600px;
@@ -2763,16 +2761,6 @@ Table of contents
      background-color: #9158d9 !important;
  }
  
- .btn-white-fill,
- .text-custom,
- .btn-white-bordered:hover,
- .btn-custom:hover,
- .service-box i,
- .pricing-column .plan-title,
- .appstore-btn,
- .appstore-btn i {
-     color: #9158d9 !important;
- }
  
  .btn-custom {
      border: 2px solid #9158d9 !important;
@@ -2882,6 +2870,12 @@ Table of contents
 #featureDevice {
      width: 800px; 
 }
+@media (max-width: 1000px) { 
+    #featureDevice {
+        width: unset; 
+        margin-top:40px;
+   }
+}
 
 #phoneFeature2 {
      margin-left:-40px;
@@ -2895,10 +2889,6 @@ Table of contents
     background-size: 22px 22px;
 }
 
-#featureDevice {
-     width: unset;
-     margin:unset;
-}
 .feature-image {
      height:unset;
      margin-left: unset;
@@ -3835,6 +3825,10 @@ cursor: pointer;
      text-transform: uppercase;
 }
 
+.row {
+    margin:unset;
+}
+
 .detail-item {
      padding: 20px 5px;
      background: #ffffff;
@@ -3873,6 +3867,10 @@ cursor: pointer;
 }
 
 /* Improving 993 line */
+.about-big {
+    margin-top:-100px;
+}
+
 .about-big .btn-custom#try-sample
 {
 	box-shadow: none;
@@ -3880,7 +3878,12 @@ cursor: pointer;
 	margin-top:20px;
     background: #2f72c7!important;
     border: 2px solid #84b5f3!important;
-	
+}
+
+@media (max-width:1000px) {
+    .about-big {
+        margin-top: unset;
+    }
 }
 
 .email-sign

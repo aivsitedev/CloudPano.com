@@ -1,0 +1,62 @@
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Easy-to-use 360 Tour Creation Software."
+    />
+    <meta name="author" content="BigHero" />
+    <title>CloudPano - Tour Creator Software</title>
+    <!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Lato:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Device Mockups -->
+    <link rel="stylesheet" type="text/css" href="js/device-mockups.min.css" />
+    <!-- Font Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Aos Animation -->
+    <link rel="stylesheet" href="css/aos.css" />
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/three.min.js"></script>
+    <script src="js/panolens.min.js"></script>
+    <script src="js/ouibounce.min.js"></script>
+
+    <!-- Color style -->
+    <link href="css/colors/dodger-blue.css" rel="stylesheet" id="color-opt" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicon  -->
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+
+  <body>
+<script>
+    var panorama, viewer;
+    panorama = new PANOLENS.ImagePanorama("https://bigdatahomes.azureedge.net/tours/3376a822e6d0f1da74a4d1288bfd767a-05-min.jpg");
+    viewer = new PANOLENS.Viewer({
+      controlBar: false
+    });
+    viewer.add(panorama);
+    viewer.getControl().autoRotateSpeed = 0.1;
+    viewer.getControl().autoRotate = true;
+    viewer.getControl().noZoom = true;
+  </script>
+  </body>
