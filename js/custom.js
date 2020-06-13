@@ -8,11 +8,11 @@
 jQuery(document).ready(function($) {
 	
 	$('#embedTourContainer').on('click', function(event) {
-		$('#embedTour').css('pointer-events', 'auto');
+		$('#embedTourContainer iframe').css('pointer-events', 'auto');
 	});
 	
 	$('#embedTourContainer').mouseleave(function(e) { 
-		$('#embedTour').css('pointer-events', 'none');
+		$('#embedTourContainer iframe').css('pointer-events', 'none');
 	});
 	
   
